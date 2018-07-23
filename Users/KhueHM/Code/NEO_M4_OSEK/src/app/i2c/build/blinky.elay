@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="..\i2c.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\board\udoo_neo\inc\board.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5924" topLine="106" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\board\udoo_neo\src\gpio_pins.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2725" topLine="52" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\board\udoo_neo\src\pin_mux.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1476" topLine="349" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\os\osek\src\ActivateTask.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7657" topLine="185" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\os\osek\src\Schedule.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7906" topLine="222" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\os\osek\src\SetEvent.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6934" topLine="175" />
+		</Cursor>
+	</File>
+</EmBitz_layout_file>

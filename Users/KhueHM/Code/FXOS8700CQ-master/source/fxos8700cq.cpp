@@ -53,8 +53,7 @@ FXOS8700CQ::FXOS8700CQ(PinName sda, PinName scl, int addr) : dev_i2c(sda, scl), 
 
     // FXOS8700CQ_XYZ_DATA_CFG
     data[0] = FXOS8700CQ_XYZ_DATA_CFG;
-    data[1] =
-        FXOS8700CQ_XYZ_DATA_CFG_FS2(1); // 0x01 gives 4g full range, 0.488mg/LSB
+    data[1] = FXOS8700CQ_XYZ_DATA_CFG_FS2(1); // 0x01 gives 4g full range, 0.488mg/LSB
     write_regs(data, 2);
 
     // Setup for write-through for M_CTRL_REG series
