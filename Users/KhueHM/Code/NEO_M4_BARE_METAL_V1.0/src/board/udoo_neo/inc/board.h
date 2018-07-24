@@ -125,6 +125,7 @@
 #define BOARD_I2C_MAG3110_ADDR                (0x0E)
 #define BOARD_I2C_MAX7310_ADDR                (0x32)
 
+
 /* EPIT common information for this board */
 #define BOARD_EPIT_CCM_ROOT                   ccmRootPerclkClkSel
 #define BOARD_EPIT_CCM_DIV                    ccmRootPerclkPodf

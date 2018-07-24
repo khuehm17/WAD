@@ -1,49 +1,16 @@
-/*
- * Copyright (c) 2015, Freescale Semiconductor, Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- * o Redistributions of source code must retain the above copyright notice, this list
- *   of conditions and the following disclaimer.
- *
- * o Redistributions in binary form must reproduce the above copyright notice, this
- *   list of conditions and the following disclaimer in the documentation and/or
- *   other materials provided with the distribution.
- *
- * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
- *   contributors may be used to endorse or promote products derived from this
- *   software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
- * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
-
-#include <stdint.h>
-#include <stdbool.h>
-#include "board.h"
-#include "debug_console_imx.h"
-#include "i2c_imx.h"
-
-#define BOARD_I2C_FXOS8700CQ_ADDR        (0x1E)
-#define BOARD_I2C_SENSOR_BASE            I2C4_BASE
-
+/* Declare Global Variable */
 static uint8_t txBuffer[5];
 static uint8_t rxBuffer[7];
 static uint8_t cmdBuffer[5];
 
 
+/* I2C Communication Initialization */
+void Init_I2C_Sensor()
+{
 
-/* Write a Byte to a Reg */
+}
+
+/* Send Data through I2C Function */
 static bool I2C_MasterSendDataPolling(I2C_Type *base,
                                       const uint8_t *cmdBuff,
                                       uint32_t cmdSize,
@@ -106,6 +73,8 @@ static bool I2C_MasterSendDataPolling(I2C_Type *base,
     }
 }
 
+
+/* Receive Data through I2C Function */
 static bool I2C_MasterReceiveDataPolling(I2C_Type *base,
                                          const uint8_t *cmdBuff,
                                          uint32_t cmdSize,
@@ -229,93 +198,20 @@ static bool I2C_MasterReceiveDataPolling(I2C_Type *base,
 }
 
 
-static void report_abs(void)
+/* Write a Byte to a Register */
+void Write_BYTE(char byte, char reg)
 {
-    int16_t x, y, z;
-    float Ax, Ay, Az;
-
     cmdBuffer[0] = BOARD_I2C_FXOS8700CQ_ADDR << 1;
-    cmdBuffer[1] = 0x01;
-    cmdBuffer[2] = (BOARD_I2C_FXOS8700CQ_ADDR << 1) + 1;
-    I2C_MasterReceiveDataPolling(BOARD_I2C_SENSOR_BASE, cmdBuffer, 3, rxBuffer, 6);
-
-    x = ((rxBuffer[0] << 8) & 0xff00) | rxBuffer[1];
-    y = ((rxBuffer[2] << 8) & 0xff00) | rxBuffer[3];
-    z = ((rxBuffer[4] << 8) & 0xff00) | rxBuffer[5];
-    x = (int16_t)(x) >> 2;
-    y = (int16_t)(y) >> 2;
-    z = (int16_t)(z) >> 2;
-
-    Ax = x / (4.0 * 1024);     //For full scale range 2g mode.
-    Ay = y / (4.0 * 1024);
-    Az = z / (4.0 * 1024);
-    PRINTF("2G MODE: X=%6.3fg Y=%6.3fg Z=%6.3fg\n\r",Ax, Ay, Az);
+    cmdBuffer[1] = reg;
+    txBuffer[0]  = byte;
+    I2C_MasterSendDataPolling(BOARD_I2C_SENSOR_BASE, cmdBuffer, 2, txBuffer, 1);
 }
 
-
-
-int main(void)
+/* Read a Byte to a Register */
+void Read_BYTE(char reg)
 {
-    /* Setup I2C init structure. */
-    i2c_init_config_t i2cInitConfig = {
-        .baudRate     = 400000u,
-        .slaveAddress = 0x00
-    };
-
-    /* Initialize board specified hardware. */
-    hardware_init();
-
-    /* Get current module clock frequency. */
-    i2cInitConfig.clockRate = get_i2c_clock_freq(BOARD_I2C_SENSOR_BASE);
-
-    PRINTF("\n\r++++++++++++++++ I2C Send/Receive polling Example ++++++++++++++++\n\r");
-    PRINTF("This example will configure on board accelerometer through I2C Bus\n\r");
-    PRINTF("and read 10 samples back to see if the accelerometer is configured successfully. \n\r");
-
-    PRINTF("[1].Initialize the I2C module with initialize structure. \n\r");
-    I2C_Init(BOARD_I2C_SENSOR_BASE, &i2cInitConfig);
-
-    /* Finally, enable the I2C module */
-    I2C_Enable(BOARD_I2C_SENSOR_BASE);
-
-    PRINTF("[2].Place the MMA8451Q in standby mode\n\r");
     cmdBuffer[0] = BOARD_I2C_FXOS8700CQ_ADDR << 1;
-    cmdBuffer[1] = 0x2A;
-    txBuffer[0]  = 0x00;
-    I2C_MasterSendDataPolling(BOARD_I2C_SENSOR_BASE, cmdBuffer, 2, txBuffer, 1);
-
-    PRINTF("[3].Set on-board Acc sensor range to 2G\n\r");
-    cmdBuffer[0] = BOARD_I2C_FXOS8700CQ_ADDR << 1;
-    cmdBuffer[1] = 0x0E;
-    txBuffer[0]  = 0x00;
-    I2C_MasterSendDataPolling(BOARD_I2C_SENSOR_BASE, cmdBuffer, 2, txBuffer, 1);
-
-    PRINTF("[3].Set on-board Acc sensor working at fast read and active mode\n\r");
-    cmdBuffer[0] = BOARD_I2C_FXOS8700CQ_ADDR << 1;
-    cmdBuffer[1] = 0x2A;
-    txBuffer[0]  = 0x05;
-    I2C_MasterSendDataPolling(BOARD_I2C_SENSOR_BASE, cmdBuffer, 2, txBuffer, 1);
-
-    PRINTF("[4].Acc sensor WHO_AM_I check... ");
-    cmdBuffer[0] = BOARD_I2C_FXOS8700CQ_ADDR << 1;
-    cmdBuffer[1] = 0x0D;
+    cmdBuffer[1] = reg;
     cmdBuffer[2] = (BOARD_I2C_FXOS8700CQ_ADDR << 1) + 1;
     I2C_MasterReceiveDataPolling(BOARD_I2C_SENSOR_BASE, cmdBuffer, 3, rxBuffer, 1);
-    if (0x1A == rxBuffer[0])
-        PRINTF("OK\n\r");
-    else
-        PRINTF("ERROR\n\r");
-
-    PRINTF("[5].Acquire 10 samples from Acc sensor\n\r");
-    for (uint8_t i = 0; i < 10; i++)
-        report_abs();
-
-    PRINTF("\n\rExample finished!!!\n\r");
-    while (true)
-        __WFI();
 }
-
-
-/*******************************************************************************
- * EOF
- ******************************************************************************/

@@ -62,6 +62,12 @@
 		<Unit filename="..\src\app\LED_Blinking\i2c.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="..\src\app\W_A_D\RW_Byte.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\app\W_A_D\RW_Byte_Init.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="..\src\board\udoo_neo\inc\board.h" />
 		<Unit filename="..\src\board\udoo_neo\inc\clock_freq.h" />
 		<Unit filename="..\src\board\udoo_neo\inc\gpio_pins.h" />
