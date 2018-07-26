@@ -44,14 +44,14 @@ int main()
 // mbed API uses 8-bit addresses so need to left-shift 7-bit addresses by 1
 #define FXOS8700CQ_ADDR   (0x1D << 1)    // for K64F board
 // values from 13.2 datasheet
-#define FXOS8700CQ_STATUS 0x00
-#define FXOS8700CQ_WHO_AM_I 0x0D
-#define FXOS8700CQ_XYZ_DATA_CFG 0x0E
-#define FXOS8700CQ_CTRL_REG1 0x2A
-#define FXOS8700CQ_M_CTRL_REG1 0x5B
-#define FXOS8700CQ_M_CTRL_REG2 0x5C
-#define FXOS8700CQ_WHO_AM_I_VAL 0xC7
-#define FXOS8700CQ_READ_LEN 13
+#define FXOS8700CQ_STATUS 			0x00
+#define FXOS8700CQ_WHO_AM_I 		0x0D
+#define FXOS8700CQ_XYZ_DATA_CFG 	0x0E
+#define FXOS8700CQ_CTRL_REG1 		0x2A
+#define FXOS8700CQ_M_CTRL_REG1 		0x5B
+#define FXOS8700CQ_M_CTRL_REG2 		0x5C
+#define FXOS8700CQ_WHO_AM_I_VAL 	0xC7
+#define FXOS8700CQ_READ_LEN 		13
 
 #define PI 3.14159265359f
 #define RAD2DEG 57.2957795131f
