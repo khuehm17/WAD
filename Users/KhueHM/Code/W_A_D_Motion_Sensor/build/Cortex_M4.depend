@@ -1759,7 +1759,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1532595532 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\w_a_d\rw_byte.c
+1532706511 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\w_a_d\rw_byte.c
 	"RW_Byte_Init.h"
 	"Sys_Delay.h"
 
@@ -1772,4 +1772,13 @@
 
 1532571881 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\w_a_d\sys_delay.h
 	"board.h"
+
+1531923287 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\w_a_d\uart_polling.c
+	<stdint.h>
+	<stdbool.h>
+	"uart_imx.h"
+	"board.h"
+	"debug_console_imx.h"
+	"gpio_imx.h"
+	"rdc_semaphore.h"
 
