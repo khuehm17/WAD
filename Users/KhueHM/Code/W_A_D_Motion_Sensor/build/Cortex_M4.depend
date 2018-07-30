@@ -1530,7 +1530,7 @@
 	"MCIMX6X/include/MCIMX6X_M4.h"
 	"MCIMX7D/include/MCIMX7D_M4.h"
 
-1531923287 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\platform\devices\mcimx6x\include\mcimx6x_m4.h
+1532781080 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\platform\devices\mcimx6x\include\mcimx6x_m4.h
 	<stdint.h>
 	"core_cm4.h"
 	"system_MCIMX6X_M4.h"
@@ -1781,4 +1781,62 @@
 	"debug_console_imx.h"
 	"gpio_imx.h"
 	"rdc_semaphore.h"
+
+1532941005 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\fxos8700cq\fxos8700cq.c
+	"FXOS8700CQ.h"
+
+1532936945 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\fxos8700cq\fxos8700cq.h
+	<stdint.h>
+	<stdbool.h>
+	"board.h"
+	"debug_console_imx.h"
+	"i2c_imx.h"
+	"Sys_Delay.h"
+	<math.h>
+	"I2C_RW_Register.h"
+
+1532940933 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\w_a_d\main.c
+	"FXOS8700CQ.h"
+	"FXAS21002C.h"
+	"Lora.h"
+	"I2C_RW_Register.h"
+	"Sys_Delay.h"
+	"debug_console_imx.h"
+
+1532790056 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\i2c_rw_register\i2c_rw_register.h
+	<stdint.h>
+	<stdbool.h>
+	"board.h"
+	"i2c_imx.h"
+
+1532787717 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\sys_delay\sys_delay.h
+	"board.h"
+
+1532929008 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\i2c_rw_register\i2c_rw_register.c
+	"I2C_RW_Register.h"
+
+1532787709 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\sys_delay\sys_delay.c
+	"Sys_Delay.h"
+
+1532941053 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\fxas21002c\fxas21002c.c
+	"FXAS21002C.h"
+
+1532936937 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\fxas21002c\fxas21002c.h
+	<stdint.h>
+	<stdbool.h>
+	"board.h"
+	"debug_console_imx.h"
+	"i2c_imx.h"
+	"Sys_Delay.h"
+	<math.h>
+	"I2C_RW_Register.h"
+
+1532938903 source:d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\lora\lora.c
+	"Lora.h"
+
+1532938925 d:\workspace\git\wad\users\khuehm\code\w_a_d_motion_sensor\src\app\lora\lora.h
+	<stdint.h>
+	<stdbool.h>
+	"uart_imx.h"
+	"board.h"
 

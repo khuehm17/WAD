@@ -56,14 +56,32 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="..\doc\README.txt" />
+		<Unit filename="..\src\app\FXAS21002C\FXAS21002C.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\app\FXAS21002C\FXAS21002C.h" />
+		<Unit filename="..\src\app\FXOS8700CQ\FXOS8700CQ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\app\FXOS8700CQ\FXOS8700CQ.h" />
+		<Unit filename="..\src\app\I2C_RW_Register\I2C_RW_Register.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\app\I2C_RW_Register\I2C_RW_Register.h" />
+		<Unit filename="..\src\app\Lora\Lora.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\app\Lora\Lora.h" />
+		<Unit filename="..\src\app\Sys_Delay\Sys_Delay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\src\app\Sys_Delay\Sys_Delay.h" />
 		<Unit filename="..\src\app\W_A_D\hardware_init.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\src\app\W_A_D\RW_Byte.c">
+		<Unit filename="..\src\app\W_A_D\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\src\app\W_A_D\RW_Byte_Init.h" />
-		<Unit filename="..\src\app\W_A_D\Sys_Delay.h" />
 		<Unit filename="..\src\board\udoo_neo\inc\board.h" />
 		<Unit filename="..\src\board\udoo_neo\inc\clock_freq.h" />
 		<Unit filename="..\src\board\udoo_neo\inc\gpio_pins.h" />
