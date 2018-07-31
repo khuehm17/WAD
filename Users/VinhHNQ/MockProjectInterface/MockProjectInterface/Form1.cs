@@ -22,6 +22,7 @@ namespace MockProjectInterface
             this.MinimumSize = new Size(735, 485);
             this.MaximumSize = new Size(735, 485);
             this.MaximizeBox = false;
+            txbThongTin.ScrollBars = ScrollBars.Vertical;
            
         }
 
@@ -39,11 +40,11 @@ namespace MockProjectInterface
                     serialPort1.PortName = comboBox1.Text;
                     serialPort1.Open();
                     btnConnect.Enabled = false;
-                    txbThongTin.Text = ("COM Port connected!!!\n");
+                    txbSend.Text = ("COM Port connected!!!\n");
                 }
                 else
                 {
-                    txbThongTin.Text = ("COM Port not found!!!\n");
+                    txbSend.Text = ("COM Port not found!!!\n");
                 }
             }
         }
@@ -55,11 +56,11 @@ namespace MockProjectInterface
             {
                 serialPort1.Close();
                 btnConnect.Enabled = true;
-                txbThongTin.Text=("COM Port disconnected!!!");
+                txbSend.Text=("COM Port disconnected!!!\n");
             }
             else
             {
-                txbThongTin.Text=("COM Port is not connected!!!");
+                txbSend.Text=("COM Port is not connected!!!\n");
                 
             }
         }
@@ -82,69 +83,6 @@ namespace MockProjectInterface
             comboBox1.DataSource = SerialPort.GetPortNames();
         }
 
-        private string AtoX(string asc)
-        {
-            int nLines;
-            int nChars;
-            int offset;
-            string hex = " ";
-
-            // tính toán số lượng dòng Hexa. 
-            if ((asc.Length % 16) > 0)
-                nLines = asc.Length / 16 + 1;
-            else
-                nLines = asc.Length / 16;
-
-            // Chuyển đổi sang những dòng Hexa.
-            for (int i = 0; i < nLines; i++)
-            {
-                offset = i * 16;
-                if ((asc.Length - offset) > 16)
-                    nChars = 16;
-                else
-                    nChars = asc.Length - offset;
-                hex += this.HexLine(i, asc.Substring(offset, nChars)) + "\r\n";
-            }
-            return hex;
-        }
-
-        private string HexLine(int lNum, string asc)
-        {
-            string hex = "";
-
-            // Copy dòng vào bộ đệm.
-            char[] c = new char[16];
-            asc.CopyTo(0, c, 0, asc.Length);
-
-            // Tạo  offset.
-            hex += String.Format("{0:X8} - {0:X8}", lNum * 16, (lNum + 1) * 16 - 1);
-            hex += " ";
-
-            // Chuyển các ký tự sang định dạng chuẩn hexa.
-            for (int i = 0; i < asc.Length; i++)
-            {
-                if ((i != 0) && ((i % 4) == 0))
-                    hex += " ";
-                hex += String.Format("{0:X2}", (int)c[i]);
-            }
-
-            // Đệm thêm.
-            int nSpaces = 62 - hex.Length;
-            for (int i = 0; i < nSpaces; i++)
-                hex += " ";
-
-            //Chuyển ASCII tới cuối dòng.                                                                                                  
-            for (int i = 0; i < asc.Length; i++)
-            {
-                if (((int)c[i] < 32) || ((int)c[i] > 126))
-                    hex += ".";
-                else
-                    hex += c[i].ToString();
-            }
-
-            // Trả lại dòng hexa .
-            return hex;
-        }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {;
@@ -153,15 +91,27 @@ namespace MockProjectInterface
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            txbThongTin.Text = txbThongTin + " " + txbSend.Text;
+            txbThongTin.Clear();
+         
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
+
                 txbThongTin.Text = txbThongTin.Text+"\n"+serialPort1.ReadExisting();
+                String[] strArray=serialPort1.ReadExisting().Split(' ');
+                if (serialPort1.ReadExisting() )
+                {
+                    Button btn = new Button() { Width = 50, Height = 50 };
+                    btn.Text = serialPort1.ReadExisting();
+                    pnWheelChair.Controls.Add(btn);
+                }
+                txbThongTin.SelectionStart = txbThongTin.Text.Length;
+                txbThongTin.ScrollToCaret();
             }
+           
         }
     }
 }

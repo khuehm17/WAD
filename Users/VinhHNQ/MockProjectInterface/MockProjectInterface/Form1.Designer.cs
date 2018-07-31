@@ -42,10 +42,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.txbSend = new System.Windows.Forms.TextBox();
             this.txbThongTin = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnClr = new System.Windows.Forms.Button();
+            this.txbSend = new System.Windows.Forms.TextBox();
+            this.pnWheelChair = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -180,15 +181,25 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pnWheelChair);
             this.panel1.Controls.Add(this.txbThongTin);
             this.panel1.Location = new System.Drawing.Point(214, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(505, 417);
             this.panel1.TabIndex = 9;
             // 
+            // txbThongTin
+            // 
+            this.txbThongTin.Location = new System.Drawing.Point(3, 3);
+            this.txbThongTin.Multiline = true;
+            this.txbThongTin.Name = "txbThongTin";
+            this.txbThongTin.ReadOnly = true;
+            this.txbThongTin.Size = new System.Drawing.Size(175, 411);
+            this.txbThongTin.TabIndex = 10;
+            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnSend);
+            this.panel2.Controls.Add(this.btnClr);
             this.panel2.Controls.Add(this.txbSend);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -198,43 +209,41 @@
             this.panel2.Controls.Add(this.btnDisconnnect);
             this.panel2.Location = new System.Drawing.Point(0, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(213, 414);
+            this.panel2.Size = new System.Drawing.Size(213, 417);
             this.panel2.TabIndex = 10;
             // 
-            // btnSend
+            // btnClr
             // 
-            this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSend.BackColor = System.Drawing.Color.White;
-            this.btnSend.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(232)))));
-            this.btnSend.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.btnSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSend.Font = new System.Drawing.Font("Bahnschrift Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.ForeColor = System.Drawing.Color.Black;
-            this.btnSend.Location = new System.Drawing.Point(104, 88);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(106, 29);
-            this.btnSend.TabIndex = 11;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = false;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.btnClr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClr.BackColor = System.Drawing.Color.White;
+            this.btnClr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(232)))));
+            this.btnClr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.btnClr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClr.Font = new System.Drawing.Font("Bahnschrift Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClr.ForeColor = System.Drawing.Color.Black;
+            this.btnClr.Location = new System.Drawing.Point(104, 88);
+            this.btnClr.Name = "btnClr";
+            this.btnClr.Size = new System.Drawing.Size(106, 29);
+            this.btnClr.TabIndex = 11;
+            this.btnClr.Text = "Clear";
+            this.btnClr.UseVisualStyleBackColor = false;
+            this.btnClr.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txbSend
             // 
             this.txbSend.Location = new System.Drawing.Point(3, 123);
             this.txbSend.Multiline = true;
             this.txbSend.Name = "txbSend";
-            this.txbSend.Size = new System.Drawing.Size(207, 288);
+            this.txbSend.Size = new System.Drawing.Size(207, 291);
             this.txbSend.TabIndex = 0;
             // 
-            // txbThongTin
+            // pnWheelChair
             // 
-            this.txbThongTin.Location = new System.Drawing.Point(3, 3);
-            this.txbThongTin.Multiline = true;
-            this.txbThongTin.Name = "txbThongTin";
-            this.txbThongTin.ReadOnly = true;
-            this.txbThongTin.Size = new System.Drawing.Size(499, 411);
-            this.txbThongTin.TabIndex = 10;
+            this.pnWheelChair.Location = new System.Drawing.Point(184, 3);
+            this.pnWheelChair.Name = "pnWheelChair";
+            this.pnWheelChair.Size = new System.Drawing.Size(318, 411);
+            this.pnWheelChair.TabIndex = 11;
             // 
             // Form1
             // 
@@ -280,8 +289,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txbSend;
-        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnClr;
         private System.Windows.Forms.TextBox txbThongTin;
+        private System.Windows.Forms.Panel pnWheelChair;
     }
 }
 
