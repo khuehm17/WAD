@@ -1,13 +1,20 @@
 /******************************************************
- *      Delay using Systick Timer
+ *      Delay using System Tick Timer Source File
  *
  *****************************************************/
-#include "board.h"
 
+/*
+ * Include Header File
+ */
+#include "Sys_Delay.h"
 
+/*
+ * FUNCTION
+ */
 volatile uint32_t msTicks;
 
-static void Systick_Delay_Init()
+/* System Tick Driver Initialization */
+void Systick_Delay_Init()
 {
     /* Activate SysTick */
    SysTick_Config(SystemCoreClock/1000);
@@ -25,9 +32,11 @@ void SysTick_Handler (void)
     msTicks ++;
 }
 
+/* System Tick Delay Function */
 void ms_delay(uint32_t dlyTicks)
 {
     uint32_t curTicks;
     curTicks = msTicks;
     while ((msTicks - curTicks) < dlyTicks);
 }
+

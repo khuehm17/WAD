@@ -3,7 +3,7 @@
 
 /* Declare Global Variable */
 static uint8_t txBuffer[5];
-static uint8_t rxBuffer[13];
+uint8_t rxBuffer[13];
 static uint8_t cmdBuffer[5];
 
 
@@ -31,27 +31,22 @@ void Init_I2C_Sensor()
 /* Initialize FXOS8700CQ */
 int Init_FXOS8700CQ()
 {
-    char data, reg;
     // Set FXOS8700CQ to Standby Mode
-    data = 0x00;
-    Write_BYTE(data, FXOS8700CQ_CTRL_REG1);
+    Write_BYTE(0x00, FXOS8700CQ_CTRL_REG1);
     // Set Magnetometer Control Register 1
-    data = 0x1F;
-    Write_BYTE(data, FXOS8700CQ_M_CTRL_REG1);
+    Write_BYTE(0x1F, FXOS8700CQ_M_CTRL_REG1);
     // Set Magnetometer Control Register 2
-    data = 0x20;
-    Write_BYTE(data, FXOS8700CQ_M_CTRL_REG2);
+    Write_BYTE(0x20, FXOS8700CQ_M_CTRL_REG2);
     // Set Data configuration Register
-    data = 0x01;
-    Write_BYTE(data, FXOS8700CQ_XYZ_DATA_CFG);
+    Write_BYTE(0x01, FXOS8700CQ_XYZ_DATA_CFG);
     // Set Accelerometer Control Register 1
-    data = 0x0D;
-    Write_BYTE(data, FXOS8700CQ_CTRL_REG1);
+    Write_BYTE(0x0D, FXOS8700CQ_CTRL_REG1);
     // WHO_AM_I Check
     Read_BYTE(FXOS8700CQ_WHO_AM_I, 1);
     if (FXOS8700CQ_WHO_AM_I_VAL == rxBuffer[0])
     {
         PRINTF("Ready to GO...!\n\r");
+        PRINTF("FXOS8700CQ ID is %d\n\r", rxBuffer[0]);
         return 1;
     }
 
@@ -272,6 +267,7 @@ void Read_BYTE(char reg, uint32_t dataLength)
 /* Get value from FXOS8700CQ Sensor */
 void FXOS8700CQ_GetValues(void)
 {
+    I2C_Enable(I2C4_BASE);
     Read_BYTE(FXOS8700CQ_STATUS, FXOS8700CQ_READ_LEN);
     //I2C_MasterReceiveDataPolling(BOARD_I2C_BASEADDR, cmdBuffer, 3, rxBuffer, 6);
     // copy the 14 bit accelerometer byte data into 16 bit words
@@ -300,6 +296,7 @@ void FXOS8700CQ_GetValues(void)
 
     //PRINTF("X=%6.3fg Y=%6.3fg Z=%6.3fg\n\r",values.ax, values.ay, values.az);
     //return values;
+    I2C_Disable(I2C4_BASE);
 }
 
 
@@ -309,16 +306,17 @@ int main(void)
     SystemInit();
     Systick_Delay_Init();
     Init_I2C_Sensor();
+    debug_printf("Start...!\n\r");
     debug_printf("Check WHO_AM_I Register of Sensor\n\r");
-    Init_FXOS8700CQ();
+    //Init_FXOS8700CQ();
     // I2C will start reading Data from FXOS8700CQ until I2C connection is OK!
-    /*
+
     while(Init_FXOS8700CQ() == 0)
     {
         ;
     }
-    */
-    struct Data values;
+    //struct Data values;
+
     debug_printf("Start Read Data From Sensor\n\r");
 
 
@@ -327,7 +325,7 @@ int main(void)
     while(1)
     {
         FXOS8700CQ_GetValues();
-        ms_delay(1000);
+        ms_delay(500);
 
         // print each struct member over serial
         /*debug_printf("ax = %f ay = %f az = %f | mx = %f my = %f mz = %f\n"
