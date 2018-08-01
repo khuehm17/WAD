@@ -16,13 +16,16 @@ namespace MockProjectInterface
 {
     public partial class Form1 : Form
     {
+        private CWheelChair wheelChair = CWheelChair.getInstance();
         public Form1()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(735, 485);
-            this.MaximumSize = new Size(735, 485);
+            this.MinimumSize = new Size(781, 485);
+            this.MaximumSize = new Size(781, 485);
             this.MaximizeBox = false;
-           
+            txbThongTin.ScrollBars = ScrollBars.Vertical;
+            txbStatus.BackColor = Color.Green;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,11 +42,11 @@ namespace MockProjectInterface
                     serialPort1.PortName = comboBox1.Text;
                     serialPort1.Open();
                     btnConnect.Enabled = false;
-                    txbThongTin.Text = ("COM Port connected!!!\n");
+                    txbThongTin.Text = txbThongTin.Text +"\r\n COM Port connected!!!\r\n";
                 }
                 else
                 {
-                    txbThongTin.Text = ("COM Port not found!!!\n");
+                    txbThongTin.Text = txbThongTin.Text + "\r\n COM Port not found!!!\r\n";
                 }
             }
         }
@@ -55,16 +58,16 @@ namespace MockProjectInterface
             {
                 serialPort1.Close();
                 btnConnect.Enabled = true;
-                txbThongTin.Text=("COM Port disconnected!!!");
+                txbThongTin.Text = txbThongTin.Text  + "\r\n COM Port disconnected!!!\r\n";
             }
             else
             {
-                txbThongTin.Text=("COM Port is not connected!!!");
-                
+                txbThongTin.Text = txbThongTin.Text + "\r\n COM Port is not connected!!!\r\n";
+
             }
         }
 
-     
+
         private void ReceiveLoraData(Object sender, SerialDataReceivedEventArgs e)
         {
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(ReceiveLoraData);
@@ -74,7 +77,7 @@ namespace MockProjectInterface
         private void HandleReceivedData(String buffer)
         {
             String[] strArray = buffer.Split('_');
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -82,69 +85,6 @@ namespace MockProjectInterface
             comboBox1.DataSource = SerialPort.GetPortNames();
         }
 
-        private string AtoX(string asc)
-        {
-            int nLines;
-            int nChars;
-            int offset;
-            string hex = " ";
-
-            // tính toán số lượng dòng Hexa. 
-            if ((asc.Length % 16) > 0)
-                nLines = asc.Length / 16 + 1;
-            else
-                nLines = asc.Length / 16;
-
-            // Chuyển đổi sang những dòng Hexa.
-            for (int i = 0; i < nLines; i++)
-            {
-                offset = i * 16;
-                if ((asc.Length - offset) > 16)
-                    nChars = 16;
-                else
-                    nChars = asc.Length - offset;
-                hex += this.HexLine(i, asc.Substring(offset, nChars)) + "\r\n";
-            }
-            return hex;
-        }
-
-        private string HexLine(int lNum, string asc)
-        {
-            string hex = "";
-
-            // Copy dòng vào bộ đệm.
-            char[] c = new char[16];
-            asc.CopyTo(0, c, 0, asc.Length);
-
-            // Tạo  offset.
-            hex += String.Format("{0:X8} - {0:X8}", lNum * 16, (lNum + 1) * 16 - 1);
-            hex += " ";
-
-            // Chuyển các ký tự sang định dạng chuẩn hexa.
-            for (int i = 0; i < asc.Length; i++)
-            {
-                if ((i != 0) && ((i % 4) == 0))
-                    hex += " ";
-                hex += String.Format("{0:X2}", (int)c[i]);
-            }
-
-            // Đệm thêm.
-            int nSpaces = 62 - hex.Length;
-            for (int i = 0; i < nSpaces; i++)
-                hex += " ";
-
-            //Chuyển ASCII tới cuối dòng.                                                                                                  
-            for (int i = 0; i < asc.Length; i++)
-            {
-                if (((int)c[i] < 32) || ((int)c[i] > 126))
-                    hex += ".";
-                else
-                    hex += c[i].ToString();
-            }
-
-            // Trả lại dòng hexa .
-            return hex;
-        }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {;
@@ -153,15 +93,152 @@ namespace MockProjectInterface
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            txbThongTin.Text = txbThongTin + " " + txbSend.Text;
+            txbThongTin.Clear();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
-                txbThongTin.Text = txbThongTin.Text+"\n"+serialPort1.ReadExisting();
+
+                txbThongTin.Text = txbThongTin.Text + "\r\n" + serialPort1.ReadExisting();
+              
             }
+        }
+
+        private void accidentEvent(string accCode)
+        {
+            String[] strArray = accCode.Split(' ');
+            wheelChair.id = strArray[0];
+            wheelChair.userName = strArray[1];
+            wheelChair.roomID = strArray[2];
+            wheelChair.blockID = strArray[3];
+            //switch (strArray[4])
+            //{
+            //    case "Accel":
+            //        wheelChair.accel.X = Int32.Parse(strArray[5]);
+            //        wheelChair.accel.Y = Int32.Parse(strArray[6]);
+            //        wheelChair.accel.Z = Int32.Parse(strArray[7]);
+            //        break;
+            //    case "Gyro":
+            //        wheelChair.gyro.X = Int32.Parse(strArray[5]);
+            //        wheelChair.gyro.Y = Int32.Parse(strArray[6]);
+            //        wheelChair.gyro.Z = Int32.Parse(strArray[7]);
+            //        break;
+            //    default:
+            //        break;
+            //}
+
+            //switch (strArray[8])
+            //{
+            //    case "Accel":
+            //        wheelChair.accel.X = Int32.Parse(strArray[9]);
+            //        wheelChair.accel.Y = Int32.Parse(strArray[10]);
+            //        wheelChair.accel.Z = Int32.Parse(strArray[11]);
+            //        break;
+            //    case "Gyro":
+            //        wheelChair.gyro.X = Int32.Parse(strArray[9]);
+            //        wheelChair.gyro.Y = Int32.Parse(strArray[10]);
+            //        wheelChair.gyro.Z = Int32.Parse(strArray[11]);
+            //        break;
+            //    default:
+            //        break;
+            //}
+
+            SetTxbName(wheelChair.id.ToString());
+            SetTxbUser(wheelChair.userName);
+            SetTxbRoom(wheelChair.roomID);
+            SetTxbBlock(wheelChair.blockID);
+           
+        }
+
+        delegate void SetTextCallback(string text);
+
+
+        private void SetTxbName(string text)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (this.txbName.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetTxbName);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txbName.Text = text;
+            }
+        }
+
+        private void SetTxbUser(string text)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (this.txbUser.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetTxbUser);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txbUser.Text = text;
+            }
+        }
+
+        private void SetTxbRoom(string text)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (this.txbRoom.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetTxbRoom);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txbRoom.Text = text;
+            }
+        }
+
+        private void SetTxbBlock(string text)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (this.txbBlock.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetTxbBlock);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.txbBlock.Text = text;
+            }
+        }
+
+        private void txbThongTin_TextChanged(object sender, EventArgs e)
+        {
+            txbThongTin.SelectionStart = txbThongTin.Text.Length;
+            txbThongTin.ScrollToCaret();
+        }
+
+        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            string tmp = serialPort1.ReadExisting(); ;
+            if (tmp != "")
+            {
+               
+                accidentEvent(tmp);
+            }
+        }
+
+        private void txbName_TextChanged(object sender, EventArgs e)
+        {
+            txbStatus.BackColor = Color.Red;
         }
     }
 }
