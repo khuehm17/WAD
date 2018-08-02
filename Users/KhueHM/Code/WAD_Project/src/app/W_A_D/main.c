@@ -16,7 +16,7 @@
 #include "I2C_RW_Register.h"
 #include "Sys_Delay.h"
 #include "debug_console_imx.h"
-#include "AccidentAlert.c"
+//#include "AccidentAlert.c"
 
 /*
  * Global variables and constants Declaration
@@ -55,8 +55,8 @@ int main (void)
 
     while(1)
     {
-        FXAS21002C_GetGyro();
-        FXOS8700CQ_GetAccel();
+        //FXAS21002C_GetGyro();
+        //FXOS8700CQ_GetAccel();
         AccidentDetect();
         ms_delay(300);
     }

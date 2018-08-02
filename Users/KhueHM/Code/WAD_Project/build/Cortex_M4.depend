@@ -1843,7 +1843,7 @@
 1533133747 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxos8700cq\fxos8700cq.c
 	"FXOS8700CQ.h"
 
-1533134174 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxos8700cq\fxos8700cq.h
+1533195593 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxos8700cq\fxos8700cq.h
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
@@ -1923,10 +1923,10 @@
 	<assert.h>
 	"device_imx.h"
 
-1533134416 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.h
+1533195596 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.h
 	"board.h"
 
-1533135016 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.h
+1533195582 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.h
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
@@ -1938,7 +1938,7 @@
 1532938903 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.c
 	"Lora.h"
 
-1533135538 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.h
+1533195570 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.h
 	<stdint.h>
 	<stdbool.h>
 	"uart_imx.h"
@@ -1954,7 +1954,7 @@
 1532787709 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.c
 	"Sys_Delay.h"
 
-1533190392 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
+1533195775 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
 	"FXAS21002C.h"
 	"FXOS8700CQ.h"
 	"Lora.h"
@@ -2130,7 +2130,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1533135662 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
+1533195596 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
 	<stdio.h>
 	"FXOS8700CQ.h"
 	"FXAS21002C.h"
@@ -2138,9 +2138,8 @@
 	"I2C_RW_Register.h"
 	"Sys_Delay.h"
 	"debug_console_imx.h"
-	"AccidentAlert.c"
 
-1533134092 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.h
+1533195549 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.h
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
@@ -2153,7 +2152,7 @@
 1533133747 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.c
 	"FXAS21002C.h"
 
-1533190392 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
+1533194549 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
 	"FXAS21002C.h"
 	"FXOS8700CQ.h"
 	"Lora.h"
