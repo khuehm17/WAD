@@ -13,4 +13,5 @@ obj\debug\src\app\w_a_d\safebutton.o: ..\src\app\W_A_D\SafeButton.c \
  ..\src\board\udoo_neo\inc/clock_freq.h \
  ..\src\board\udoo_neo\inc/gpio_pins.h \
  ..\src\platform\drivers\inc/gpio_imx.h \
- ..\src\platform\utilities\inc/debug_console_imx.h
+ ..\src\platform\utilities\inc/debug_console_imx.h \
+ ..\src\platform\drivers\inc/rdc_semaphore.h

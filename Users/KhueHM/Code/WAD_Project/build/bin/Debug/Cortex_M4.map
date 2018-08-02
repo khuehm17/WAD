@@ -166,7 +166,7 @@ Discarded input sections
  .data          0x00000000        0x0 obj\debug\src\app\w_a_d\main.o
  .bss           0x00000000        0x0 obj\debug\src\app\w_a_d\main.o
  .rodata.wheelchairID
-                0x00000000       0x14 obj\debug\src\app\w_a_d\main.o
+                0x00000000        0x8 obj\debug\src\app\w_a_d\main.o
  .text.AccidentDetect
                 0x00000000       0x5c obj\debug\src\app\w_a_d\main.o
  .text          0x00000000        0x0 obj\debug\src\board\udoo_neo\src\board.o
@@ -1088,7 +1088,7 @@ Linker script and memory map
                 0x1fff8000                __isr_vector
                 0x1fff8240                . = ALIGN (0x4)
 
-.text           0x1fff8240     0x46d0
+.text           0x1fff8240     0x46c4
                 0x1fff8240                . = ALIGN (0x4)
  *(.text)
  .text          0x1fff8240       0x5c obj\debug\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.o
@@ -1587,110 +1587,110 @@ Linker script and memory map
  .rodata.__func__.8151
                 0x1fffc634       0x18 obj\debug\src\app\lora\lora.o
  .rodata.wheelchairID
-                0x1fffc64c       0x14 obj\debug\src\app\w_a_d\accidentalert.o
+                0x1fffc64c        0x8 obj\debug\src\app\w_a_d\accidentalert.o
                 0x1fffc64c                wheelchairID
  .rodata.__func__.8967
-                0x1fffc660       0x10 obj\debug\src\board\udoo_neo\src\board.o
+                0x1fffc654       0x10 obj\debug\src\board\udoo_neo\src\board.o
  .rodata.i2cClkDivTab
-                0x1fffc670      0x190 obj\debug\src\platform\drivers\src\i2c_imx.o
+                0x1fffc664      0x190 obj\debug\src\platform\drivers\src\i2c_imx.o
  .rodata.__func__.8054
-                0x1fffc800        0x9 obj\debug\src\platform\drivers\src\i2c_imx.o
- *fill*         0x1fffc809        0x3 
+                0x1fffc7f4        0x9 obj\debug\src\platform\drivers\src\i2c_imx.o
+ *fill*         0x1fffc7fd        0x3 
  .rodata.__func__.8014
-                0x1fffc80c       0x14 obj\debug\src\platform\drivers\src\i2c_imx.o
+                0x1fffc800       0x14 obj\debug\src\platform\drivers\src\i2c_imx.o
  .rodata.__func__.8065
-                0x1fffc820       0x10 obj\debug\src\platform\drivers\src\i2c_imx.o
+                0x1fffc814       0x10 obj\debug\src\platform\drivers\src\i2c_imx.o
  .rodata.__func__.8234
-                0x1fffc830        0xa obj\debug\src\platform\drivers\src\uart_imx.o
+                0x1fffc824        0xa obj\debug\src\platform\drivers\src\uart_imx.o
  .rodata.str1.1
-                0x1fffc83a       0x3c c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-assert.o)
+                0x1fffc82e       0x3c c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-assert.o)
                                  0x3d (size before relaxing)
  .rodata.str1.1
-                0x1fffc876        0x2 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-impure.o)
+                0x1fffc86a        0x2 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x1fffc878        0x4 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-impure.o)
-                0x1fffc878                _global_impure_ptr
+                0x1fffc86c        0x4 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-impure.o)
+                0x1fffc86c                _global_impure_ptr
  .rodata.str1.1
-                0x1fffc87c       0x11 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-nano-vfprintf.o)
+                0x1fffc870       0x11 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-nano-vfprintf.o)
  .rodata.str1.1
-                0x1fffc88d       0x22 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x1fffc8af        0x1 
+                0x1fffc881       0x22 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x1fffc8a3        0x1 
  .rodata.__sf_fake_stdin
-                0x1fffc8b0       0x20 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-findfp.o)
-                0x1fffc8b0                __sf_fake_stdin
+                0x1fffc8a4       0x20 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-findfp.o)
+                0x1fffc8a4                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x1fffc8d0       0x20 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-findfp.o)
-                0x1fffc8d0                __sf_fake_stdout
+                0x1fffc8c4       0x20 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-findfp.o)
+                0x1fffc8c4                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x1fffc8f0       0x20 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-findfp.o)
-                0x1fffc8f0                __sf_fake_stderr
+                0x1fffc8e4       0x20 c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\libg_n.a(lib_a-findfp.o)
+                0x1fffc8e4                __sf_fake_stderr
  *(.glue_7)
- .glue_7        0x1fffc910        0x0 linker stubs
+ .glue_7        0x1fffc904        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x1fffc910        0x0 linker stubs
+ .glue_7t       0x1fffc904        0x0 linker stubs
  *(.eh_frame)
  *(.init)
  *(.fini)
-                0x1fffc910                . = ALIGN (0x4)
+                0x1fffc904                . = ALIGN (0x4)
 
-.vfp11_veneer   0x1fffc910        0x0
- .vfp11_veneer  0x1fffc910        0x0 linker stubs
+.vfp11_veneer   0x1fffc904        0x0
+ .vfp11_veneer  0x1fffc904        0x0 linker stubs
 
-.v4_bx          0x1fffc910        0x0
- .v4_bx         0x1fffc910        0x0 linker stubs
+.v4_bx          0x1fffc904        0x0
+ .v4_bx         0x1fffc904        0x0 linker stubs
 
-.iplt           0x1fffc910        0x0
- .iplt          0x1fffc910        0x0 obj\debug\src\app\fxas21002c\fxas21002c.o
+.iplt           0x1fffc904        0x0
+ .iplt          0x1fffc904        0x0 obj\debug\src\app\fxas21002c\fxas21002c.o
 
-.rel.dyn        0x1fffc910        0x0
- .rel.iplt      0x1fffc910        0x0 obj\debug\src\app\fxas21002c\fxas21002c.o
+.rel.dyn        0x1fffc904        0x0
+ .rel.iplt      0x1fffc904        0x0 obj\debug\src\app\fxas21002c\fxas21002c.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x1fffc910        0x0
-                0x1fffc910                __exidx_start = .
+.ARM            0x1fffc904        0x0
+                0x1fffc904                __exidx_start = .
  *(.ARM.exidx*)
-                0x1fffc910                __exidx_end = .
+                0x1fffc904                __exidx_end = .
 
-.ctors          0x1fffc910        0x0
-                0x1fffc910                __CTOR_LIST__ = .
+.ctors          0x1fffc904        0x0
+                0x1fffc904                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x1fffc910                __CTOR_END__ = .
+                0x1fffc904                __CTOR_END__ = .
 
-.dtors          0x1fffc910        0x0
-                0x1fffc910                __DTOR_LIST__ = .
+.dtors          0x1fffc904        0x0
+                0x1fffc904                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x1fffc910                __DTOR_END__ = .
+                0x1fffc904                __DTOR_END__ = .
 
-.preinit_array  0x1fffc910        0x0
+.preinit_array  0x1fffc904        0x0
                 [!provide]                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
                 [!provide]                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x1fffc910        0x0
+.init_array     0x1fffc904        0x0
                 [!provide]                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
                 [!provide]                PROVIDE (__init_array_end, .)
 
-.fini_array     0x1fffc910        0x0
+.fini_array     0x1fffc904        0x0
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x1fffc910                __etext = .
-                0x1fffc910                __DATA_ROM = .
+                0x1fffc904                __etext = .
+                0x1fffc904                __DATA_ROM = .
 
-.data           0x20000000       0x68 load address 0x1fffc910
+.data           0x20000000       0x68 load address 0x1fffc904
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                __DATA_RAM = .
                 0x20000000                __data_start__ = .
@@ -1707,14 +1707,14 @@ Linker script and memory map
  *(.jcr*)
                 0x20000068                . = ALIGN (0x4)
                 0x20000068                __data_end__ = .
-                0x1fffc978                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x1fffc96c                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
                 0x20000000                text_end = (ORIGIN (m_text) + LENGTH (m_text))
                 0x00000001                ASSERT ((__DATA_END <= text_end), region m_text overflowed with text and data)
 
-.igot.plt       0x20000068        0x0 load address 0x1fffc978
+.igot.plt       0x20000068        0x0 load address 0x1fffc96c
  .igot.plt      0x20000068        0x0 obj\debug\src\app\fxas21002c\fxas21002c.o
 
-.bss            0x20000068       0x70 load address 0x1fffc978
+.bss            0x20000068       0x70 load address 0x1fffc96c
                 0x20000068                . = ALIGN (0x4)
                 0x20000068                __START_BSS = .
                 0x20000068                __bss_start__ = .
@@ -1759,7 +1759,7 @@ Linker script and memory map
                 0x200000d8                __bss_end__ = .
                 0x200000d8                __END_BSS = .
 
-.heap           0x200000d8      0x400 load address 0x1fffc9e8
+.heap           0x200000d8      0x400 load address 0x1fffc9dc
                 0x200000d8                . = ALIGN (0x8)
                 0x200000d8                __end__ = .
                 0x200000d8                PROVIDE (end, .)
@@ -1768,7 +1768,7 @@ Linker script and memory map
  *fill*         0x200000d8      0x400 
                 0x200004d8                __HeapLimit = .
 
-.stack          0x200004d8      0x400 load address 0x1fffcde8
+.stack          0x200004d8      0x400 load address 0x1fffcddc
                 0x200004d8                . = ALIGN (0x8)
                 0x200008d8                . = (. + STACK_SIZE)
  *fill*         0x200004d8      0x400 

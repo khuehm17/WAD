@@ -15,7 +15,7 @@
  * Define Wheelchair ID to Detect
  *  Wheelchair ID Form: ID-UserName-Room-Block
  */
-const char wheelchairID[] = "WC1 VinhHNQ MIT FT1";
+const char wheelchairID[] = "CwtVinh";
 
 /*
  * Accident Detect Function
