@@ -15,4 +15,4 @@ obj\debug\src\app\w_a_d\main.o: ..\src\app\W_A_D\main.c \
  ..\src\platform\drivers\inc/i2c_imx.h ..\src\app\Sys_Delay/Sys_Delay.h \
  ..\src\app\I2C_RW_Register/I2C_RW_Register.h \
  ..\src\app\FXAS21002C/FXAS21002C.h ..\src\app\Lora/Lora.h \
- ..\src\platform\drivers\inc/uart_imx.h ..\src\app\W_A_D\AccidentAlert.c
+ ..\src\platform\drivers\inc/uart_imx.h
