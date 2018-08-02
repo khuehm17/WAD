@@ -2166,3 +2166,321 @@
 	"debug_console_imx.h"
 	"rdc_semaphore.h"
 
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.c
+	"FXAS21002C.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.h
+	<stdint.h>
+	<stdbool.h>
+	"board.h"
+	"debug_console_imx.h"
+	"i2c_imx.h"
+	"Sys_Delay.h"
+	<math.h>
+	"I2C_RW_Register.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\inc\board.h
+	"pin_mux.h"
+	"rdc.h"
+	"rdc_defs_imx6sx.h"
+	"ccm_imx6sx.h"
+	"clock_freq.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\inc\pin_mux.h
+	"device_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\devices\device_imx.h
+	"MCIMX6X/include/MCIMX6X_M4.h"
+	"MCIMX7D/include/MCIMX7D_M4.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\devices\mcimx6x\include\mcimx6x_m4.h
+	<stdint.h>
+	"core_cm4.h"
+	"system_MCIMX6X_M4.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\cmsis\include\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cmSimd.h>
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\cmsis\include\core_cminstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\cmsis\include\core_cmfunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\cmsis\include\core_cmsimd.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.h
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\rdc.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\rdc_defs_imx6sx.h
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\ccm_imx6sx.h
+	<stdint.h>
+	<stdbool.h>
+	<stddef.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\inc\clock_freq.h
+	"device_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\utilities\inc\debug_console_imx.h
+	<stdint.h>
+	"device_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\i2c_imx.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.h
+	"board.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.h
+	<stdint.h>
+	<stdbool.h>
+	"board.h"
+	"i2c_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\fxos8700cq\fxos8700cq.c
+	"FXOS8700CQ.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\fxos8700cq\fxos8700cq.h
+	<stdint.h>
+	<stdbool.h>
+	"board.h"
+	"debug_console_imx.h"
+	"i2c_imx.h"
+	"Sys_Delay.h"
+	<math.h>
+	"I2C_RW_Register.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.c
+	"I2C_RW_Register.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\lora\lora.c
+	"Lora.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\lora\lora.h
+	<stdint.h>
+	<stdbool.h>
+	"uart_imx.h"
+	"board.h"
+	"debug_console_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\uart_imx.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.c
+	"Sys_Delay.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
+	"FXAS21002C.h"
+	"FXOS8700CQ.h"
+	"Lora.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\hardware_init.c
+	"board.h"
+	"pin_mux.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
+	<stdio.h>
+	"FXOS8700CQ.h"
+	"FXAS21002C.h"
+	"Lora.h"
+	"I2C_RW_Register.h"
+	"Sys_Delay.h"
+	"debug_console_imx.h"
+	"AccidentAlert.c"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
+	"FXAS21002C.h"
+	"FXOS8700CQ.h"
+	"Lora.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\src\board.c
+	<stdio.h>
+	"board.h"
+	"debug_console_imx.h"
+	"ccm_imx6sx.h"
+	"rdc.h"
+	"wdog_imx.h"
+	"pin_mux.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\wdog_imx.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\src\clock_freq.c
+	"clock_freq.h"
+	"ccm_imx6sx.h"
+	"ccm_analog_imx6sx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\ccm_analog_imx6sx.h
+	<stdint.h>
+	<stdbool.h>
+	<stddef.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\src\gpio_pins.c
+	<assert.h>
+	"gpio_pins.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\inc\gpio_pins.h
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\board\udoo_neo\src\pin_mux.c
+	"pin_mux.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.s
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.c
+	<stdbool.h>
+	"MCIMX6X_M4.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\adc_imx6sx.c
+	"adc_imx6sx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\adc_imx6sx.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\ccm_analog_imx6sx.c
+	"ccm_analog_imx6sx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\ccm_imx6sx.c
+	"ccm_imx6sx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\ecspi.c
+	"ecspi.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\ecspi.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\epit.c
+	"epit.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\epit.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\flexcan.c
+	"flexcan.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\flexcan.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\gpio_imx.c
+	"gpio_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\gpio_imx.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\i2c_imx.c
+	"i2c_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\lmem.c
+	"lmem.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\lmem.h
+	<stdint.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\mu_imx.c
+	"mu_imx.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\mu_imx.h
+	<stdint.h>
+	<stdbool.h>
+	<assert.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\rdc.c
+	"rdc.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\rdc_semaphore.c
+	<assert.h>
+	"rdc_semaphore.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\rdc_semaphore.h
+	<stdint.h>
+	<stdbool.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\sema4.c
+	<assert.h>
+	"sema4.h"
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\inc\sema4.h
+	<stdint.h>
+	<stdbool.h>
+	"device_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\uart_imx.c
+	"uart_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\drivers\src\wdog_imx.c
+	"wdog_imx.h"
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\utilities\src\debug_console_imx.c
+	<stdbool.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	"device_imx.h"
+	"debug_console_imx.h"
+	"uart_imx.h"
+	"print_scan.h"
+	<yfuns.h>
+
+1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\utilities\src\print_scan.h
+	<stdio.h>
+	<stdarg.h>
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+
+1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\platform\utilities\src\print_scan.c
+	"print_scan.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdint.h>
+	<stdbool.h>
+
