@@ -31,8 +31,17 @@
 #include "board.h"
 #include "pin_mux.h"
 
+
 void hardware_init(void)
 {
+    //UART_Lora_Init();
+    //Systick_Delay_Init();
+
+    //I2C_FXOS8700CQ_Init();
+    //I2C_FXAS21002C_Init();
+
+    //FXOS8700CQ_Init();
+    //FXAS21002C_Init();
     /* Board specific RDC settings */
     BOARD_RdcInit();
 

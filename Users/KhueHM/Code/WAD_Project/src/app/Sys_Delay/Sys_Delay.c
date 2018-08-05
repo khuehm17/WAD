@@ -11,7 +11,7 @@
 /*
  * FUNCTION
  */
-volatile uint32_t msTicks;
+volatile uint32_t msTicks = 0;
 
 /* System Tick Driver Initialization */
 void Systick_Delay_Init()
@@ -33,6 +33,7 @@ void SysTick_Handler (void)
 }
 
 /* System Tick Delay Function */
+
 void ms_delay(uint32_t dlyTicks)
 {
     uint32_t curTicks;

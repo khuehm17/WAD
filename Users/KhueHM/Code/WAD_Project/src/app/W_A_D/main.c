@@ -16,7 +16,6 @@
 #include "I2C_RW_Register.h"
 #include "Sys_Delay.h"
 #include "debug_console_imx.h"
-//#include "AccidentAlert.c"
 
 /*
  * Global variables and constants Declaration
@@ -29,15 +28,6 @@ int main (void)
 {
     hardware_init();
     SystemInit();
-
-    UART_Lora_Init();
-    Systick_Delay_Init();
-
-    I2C_FXOS8700CQ_Init();
-    I2C_FXAS21002C_Init();
-
-    FXOS8700CQ_Init();
-    FXAS21002C_Init();
 
     //FXOS8700CQ_Accel_Calib();
 
@@ -55,8 +45,6 @@ int main (void)
 
     while(1)
     {
-        //FXAS21002C_GetGyro();
-        //FXOS8700CQ_GetAccel();
         AccidentDetect();
         ms_delay(300);
     }

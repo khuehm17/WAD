@@ -18,10 +18,8 @@
 /*
  * Declare Global Variables
  */
-static bool on = false;
-static uint8_t keyLastState;
-static uint8_t keyState;
-static volatile uint8_t button_pressed_flag;
+// Define a small delay time (ms) to avoid button bounce
+#define buttonDEBOUNCE 70
 
 /*
  * Button Initialization
@@ -31,39 +29,28 @@ void GPIO_Ctrl_InitButton()
     gpio_init_config_t ButtonInitConfig = {
         .pin = 8,
         .direction = gpioDigitalInput,
-        .interruptMode = gpioNoIntmode
+        .interruptMode = gpioIntHighLevel
         };
     GPIO_Init(GPIO4_BASE_PTR, &ButtonInitConfig);
-    //NVIC_EnableIRQ(GPIO4_INT15_0_IRQn);
-    /* Clear the interrupt state, this operation is necessary, because the GPIO module maybe confuse
-    the first rising edge as interrupt*/
-    //GPIO_ClearStatusFlag(GPIO4_BASE_PTR, 8);
     /* Enable GPIO pin interrupt */
-    //GPIO_SetPinIntMode(GPIO4_BASE_PTR, 8, true);
+    GPIO_SetPinIntMode(GPIO4_BASE_PTR, 8, true);
+    /* Clear the interrupt state */
+    GPIO_ClearStatusFlag(GPIO4_BASE_PTR, 8);
 }
 
 /*
- * GPIO Wait Button Pressed
+ * Buzzer Initialization
  */
- /*
-void WaitButtonPressed()
+void GPIO_Ctrl_InitBuzzer()
 {
-    while (button_pressed_flag == 0);
-    button_pressed_flag = 0;
+    gpio_init_config_t buzzerInitConfig = {
+        .pin = 14,
+        .direction = gpioDigitalOutput,
+        .interruptMode = gpioNoIntmode
+    };
+    GPIO_Init(GPIO6_BASE_PTR, &buzzerInitConfig);
 }
-*/
 
-/*
- * GPIO Wait Button Pressed
- */
-void WaitButtonPressed()
-{
-    while( keyState == keyLastState )
-    {
-        keyState = GPIO_ReadPinInput(GPIO4_BASE_PTR, 8);
-    }
-    keyLastState = keyState;
-}
 
 /*
  * MAIN Function
@@ -72,32 +59,37 @@ int main(void)
 {
     hardware_init();
 
-    debug_printf("Init Button...!\r\n");
+    Systick_Delay_Init();
 
+    GPIO_Ctrl_InitBuzzer();
     GPIO_Ctrl_InitButton();
 
     debug_printf("Start...!\r\n");
 
+    bool IntStatus;
 
     while(1)
     {
-        WaitButtonPressed();
-        PRINTF("%c ", on ? 'ON' : 'OFF');
-        on = !on;
+        IntStatus = GPIO_IsIntPending(GPIO4_BASE_PTR, 8);
+        //debug_printf("%d", IntStatus);
+
+        if (IntStatus == 1)
+        {
+            debug_printf("ON\r\n");
+            GPIO_WritePinOutput(GPIO6_BASE_PTR, 14, gpioPinClear);
+        }
+        else
+        {
+            GPIO_WritePinOutput(GPIO6_BASE_PTR, 14, gpioPinSet);
+        }
+
+        ms_delay(buttonDEBOUNCE);
     }
 }
 
 /*
  * GPIO Button Handler
  */
-/*
 void GPIO4_Combined_0_15_Handler()
 {
-    button_pressed_flag = 1;
-
-    debug_printf("ON\r\n");
-
-    // clear the interrupt status
-    GPIO_ClearStatusFlag(GPIO4_BASE_PTR, 8);
 }
-*/
