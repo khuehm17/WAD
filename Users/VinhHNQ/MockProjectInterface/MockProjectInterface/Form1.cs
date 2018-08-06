@@ -17,7 +17,7 @@ namespace MockProjectInterface
 {
     public partial class Form1 : Form
     {
-  
+
         private List<CWheelChair> list = new List<CWheelChair>();
 
         public Form1()
@@ -28,10 +28,10 @@ namespace MockProjectInterface
             this.MaximizeBox = false;
             txbThongTin.ScrollBars = ScrollBars.Vertical;
             LoadData();
-            for(int i = 0;i<list.Count;i++)
+            for (int i = 0; i < list.Count; i++)
             {
                 int tmp = i * 34;
-                CreateDataView(list[i], tmp);
+                CreateCustomTable(list[i], tmp);
             }
 
         }
@@ -50,7 +50,7 @@ namespace MockProjectInterface
                     serialPort1.PortName = comboBox1.Text;
                     serialPort1.Open();
                     btnConnect.Enabled = false;
-                    txbThongTin.Text = txbThongTin.Text +"\r\n COM Port connected!!!\r\n";
+                    txbThongTin.Text = txbThongTin.Text + "\r\n COM Port connected!!!\r\n";
                 }
                 else
                 {
@@ -66,7 +66,7 @@ namespace MockProjectInterface
             {
                 serialPort1.Close();
                 btnConnect.Enabled = true;
-                txbThongTin.Text = txbThongTin.Text  + "\r\n COM Port disconnected!!!\r\n";
+                txbThongTin.Text = txbThongTin.Text + "\r\n COM Port disconnected!!!\r\n";
             }
             else
             {
@@ -75,18 +75,6 @@ namespace MockProjectInterface
             }
         }
 
-
-        private void ReceiveLoraData(Object sender, SerialDataReceivedEventArgs e)
-        {
-            serialPort1.DataReceived += new SerialDataReceivedEventHandler(ReceiveLoraData);
-            string readData = serialPort1.ReadExisting().ToString();
-        }
-
-        private void HandleReceivedData(String buffer)
-        {
-            String[] strArray = buffer.Split('_');
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -111,27 +99,29 @@ namespace MockProjectInterface
             {
 
                 txbThongTin.Text = txbThongTin.Text + "\r\n" + serialPort1.ReadExisting();
-              
+
             }
         }
 
+
+        private DialogResult dialogResult;
+
+        private SoundPlayer soundPlayer = new SoundPlayer(@"..\..\RedAlert.wav");
+
+        //Handle accident event
         private void accidentEvent(string accCode)
         {
+            
             TextBox textBox = (TextBox)this.Controls.Find("txb" + accCode + "Status", true).FirstOrDefault();
             if (textBox != null)
             {
                 this.Invoke(new MethodInvoker(delegate ()
                 {
                     textBox.BackColor = Color.Red;
-                    SoundPlayer soundPlayer = new SoundPlayer(@"..\..\RedAlert.wav");
+                   
                     soundPlayer.Play();
-                    MessageBoxButtons messageBoxButtons = MessageBoxButtons.OK;
-                    
-                    DialogResult dialogResult= MessageBox.Show("Thằng " + getUserNamebyID(accCode) + " sắp ngủm rồi kìa!!!!","",messageBoxButtons);
-                    if(dialogResult==DialogResult.OK)
-                    {
-                        soundPlayer.Stop();
-                    }
+                 
+
                 }));
                 foreach (CWheelChair item in list)
                 {
@@ -154,26 +144,62 @@ namespace MockProjectInterface
             txbThongTin.SelectionStart = txbThongTin.Text.Length;
             txbThongTin.ScrollToCaret();
         }
-
+        
+        //Serial Port Data received event
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            string tmp = serialPort1.ReadExisting(); ;
+            string tmp = serialPort1.ReadExisting(); 
             if (tmp != "")
             {
-                if (tmp.Length < 4)
+                if (tmp.Length < 7)
                 {
-                    accidentEvent(tmp);
+                    String[] tmpArr = tmp.Split('_');
+                    ProcessReceiveData(tmpArr[1],tmpArr[0]);
                 }
                 else {
-                    string tmp2 = tmp.Remove(3);
-                    accidentEvent(tmp); }
+                    string tmp2 = tmp.Remove(6);
+                    String[] tmpArr = tmp2.Split('_');
+                    ProcessReceiveData(tmpArr[1], tmpArr[0]);
+                }
+            }
+        }
+
+        //Determine the event
+        private void ProcessReceiveData(string code, string id)
+        {
+            if (code == "AC")
+            {
+                accidentEvent(id);
+                this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Accident signal incoming"; }));
+            }
+            else{
+                stillOkEvent(id);
+            }
+        }
+
+        //Handle still ok event 
+        private void stillOkEvent(string id)
+        {
+            TextBox textBox = (TextBox)this.Controls.Find("txb" + id + "Status", true).FirstOrDefault();
+            if (textBox != null)
+            {
+                this.Invoke(new MethodInvoker(delegate ()
+                {
+                    textBox.BackColor = Color.Green;
+                    soundPlayer.Stop();
+                
+                }));
+                foreach (CWheelChair item in list)
+                {
+                    if (item.id == id) { item.status = "1"; }
+                }
             }
         }
 
 
+        //Load data from excel
         private void LoadData()
-        {
-           
+        {  
                 var package =new ExcelPackage(new FileInfo(@"..\..\ImportData.xlsx"));
 
                 ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
@@ -205,7 +231,7 @@ namespace MockProjectInterface
 
 
         //Create a table of wheelchair data
-        private void CreateDataView(CWheelChair wheelChair,int i)
+        private void CreateCustomTable(CWheelChair wheelChair,int i)
         {
             Panel panel = new Panel();
             panel.Name = "pn"+wheelChair.id;
