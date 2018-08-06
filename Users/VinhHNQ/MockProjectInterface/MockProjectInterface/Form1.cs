@@ -9,14 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Threading;
-
-
+using System.IO;
+using OfficeOpenXml;
+using System.Media;
 
 namespace MockProjectInterface
 {
     public partial class Form1 : Form
     {
-        private CWheelChair wheelChair = CWheelChair.getInstance();
+  
+        private List<CWheelChair> list = new List<CWheelChair>();
+
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +27,12 @@ namespace MockProjectInterface
             this.MaximumSize = new Size(781, 485);
             this.MaximizeBox = false;
             txbThongTin.ScrollBars = ScrollBars.Vertical;
-            txbStatus.BackColor = Color.Green;
+            LoadData();
+            for(int i = 0;i<list.Count;i++)
+            {
+                int tmp = i * 34;
+                CreateDataView(list[i], tmp);
+            }
 
         }
 
@@ -109,115 +117,36 @@ namespace MockProjectInterface
 
         private void accidentEvent(string accCode)
         {
-            String[] strArray = accCode.Split(' ');
-            wheelChair.id = strArray[0];
-            wheelChair.userName = strArray[1];
-            wheelChair.roomID = strArray[2];
-            wheelChair.blockID = strArray[3];
-            //switch (strArray[4])
-            //{
-            //    case "Accel":
-            //        wheelChair.accel.X = Int32.Parse(strArray[5]);
-            //        wheelChair.accel.Y = Int32.Parse(strArray[6]);
-            //        wheelChair.accel.Z = Int32.Parse(strArray[7]);
-            //        break;
-            //    case "Gyro":
-            //        wheelChair.gyro.X = Int32.Parse(strArray[5]);
-            //        wheelChair.gyro.Y = Int32.Parse(strArray[6]);
-            //        wheelChair.gyro.Z = Int32.Parse(strArray[7]);
-            //        break;
-            //    default:
-            //        break;
-            //}
-
-            //switch (strArray[8])
-            //{
-            //    case "Accel":
-            //        wheelChair.accel.X = Int32.Parse(strArray[9]);
-            //        wheelChair.accel.Y = Int32.Parse(strArray[10]);
-            //        wheelChair.accel.Z = Int32.Parse(strArray[11]);
-            //        break;
-            //    case "Gyro":
-            //        wheelChair.gyro.X = Int32.Parse(strArray[9]);
-            //        wheelChair.gyro.Y = Int32.Parse(strArray[10]);
-            //        wheelChair.gyro.Z = Int32.Parse(strArray[11]);
-            //        break;
-            //    default:
-            //        break;
-            //}
-
-            SetTxbName(wheelChair.id.ToString());
-            SetTxbUser(wheelChair.userName);
-            SetTxbRoom(wheelChair.roomID);
-            SetTxbBlock(wheelChair.blockID);
-           
-        }
-
-        delegate void SetTextCallback(string text);
-
-
-        private void SetTxbName(string text)
-        {
-            // InvokeRequired required compares the thread ID of the
-            // calling thread to the thread ID of the creating thread.
-            // If these threads are different, it returns true.
-            if (this.txbName.InvokeRequired)
+            TextBox textBox = (TextBox)this.Controls.Find("txb" + accCode + "Status", true).FirstOrDefault();
+            if (textBox != null)
             {
-                SetTextCallback d = new SetTextCallback(SetTxbName);
-                this.Invoke(d, new object[] { text });
-            }
-            else
-            {
-                this.txbName.Text = text;
+                this.Invoke(new MethodInvoker(delegate ()
+                {
+                    textBox.BackColor = Color.Red;
+                    SoundPlayer soundPlayer = new SoundPlayer(@"..\..\RedAlert.wav");
+                    soundPlayer.Play();
+                    MessageBoxButtons messageBoxButtons = MessageBoxButtons.OK;
+                    
+                    DialogResult dialogResult= MessageBox.Show("Thằng " + getUserNamebyID(accCode) + " sắp ngủm rồi kìa!!!!","",messageBoxButtons);
+                    if(dialogResult==DialogResult.OK)
+                    {
+                        soundPlayer.Stop();
+                    }
+                }));
+                foreach (CWheelChair item in list)
+                {
+                    if (item.id == accCode) { item.status = "0"; }
+                }
             }
         }
 
-        private void SetTxbUser(string text)
+        private string getUserNamebyID(string id)
         {
-            // InvokeRequired required compares the thread ID of the
-            // calling thread to the thread ID of the creating thread.
-            // If these threads are different, it returns true.
-            if (this.txbUser.InvokeRequired)
+            foreach (CWheelChair item in list)
             {
-                SetTextCallback d = new SetTextCallback(SetTxbUser);
-                this.Invoke(d, new object[] { text });
+                if (item.id == id) { return item .userName ; }
             }
-            else
-            {
-                this.txbUser.Text = text;
-            }
-        }
-
-        private void SetTxbRoom(string text)
-        {
-            // InvokeRequired required compares the thread ID of the
-            // calling thread to the thread ID of the creating thread.
-            // If these threads are different, it returns true.
-            if (this.txbRoom.InvokeRequired)
-            {
-                SetTextCallback d = new SetTextCallback(SetTxbRoom);
-                this.Invoke(d, new object[] { text });
-            }
-            else
-            {
-                this.txbRoom.Text = text;
-            }
-        }
-
-        private void SetTxbBlock(string text)
-        {
-            // InvokeRequired required compares the thread ID of the
-            // calling thread to the thread ID of the creating thread.
-            // If these threads are different, it returns true.
-            if (this.txbBlock.InvokeRequired)
-            {
-                SetTextCallback d = new SetTextCallback(SetTxbBlock);
-                this.Invoke(d, new object[] { text });
-            }
-            else
-            {
-                this.txbBlock.Text = text;
-            }
+            return null;
         }
 
         private void txbThongTin_TextChanged(object sender, EventArgs e)
@@ -231,14 +160,120 @@ namespace MockProjectInterface
             string tmp = serialPort1.ReadExisting(); ;
             if (tmp != "")
             {
-               
-                accidentEvent(tmp);
+                if (tmp.Length < 4)
+                {
+                    accidentEvent(tmp);
+                }
+                else {
+                    string tmp2 = tmp.Remove(3);
+                    accidentEvent(tmp); }
             }
         }
 
-        private void txbName_TextChanged(object sender, EventArgs e)
+
+        private void LoadData()
         {
-            txbStatus.BackColor = Color.Red;
+           
+                var package =new ExcelPackage(new FileInfo(@"..\..\ImportData.xlsx"));
+
+                ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
+
+                for (int i = worksheet.Dimension.Start.Row + 1; i <= worksheet.Dimension.End.Row; i++)
+                {
+
+
+                    int j = 1;
+
+                    string name = worksheet.Cells[i, j++].Value.ToString();
+                    string userName = worksheet.Cells[i, j++].Value.ToString();
+                    string roomID = worksheet.Cells[i, j++].Value.ToString();
+                    string blockID = worksheet.Cells[i, j++].Value.ToString();
+                    string status = worksheet.Cells[i, j++].Value.ToString();
+                  
+
+                    CWheelChair cWheel = new CWheelChair()
+                    {
+                        id = name,
+                        userName = userName,
+                        roomID = roomID,
+                        blockID = blockID,
+                        status = status
+                    };
+                       list.Add(cWheel);
+                }
+        }
+
+
+        //Create a table of wheelchair data
+        private void CreateDataView(CWheelChair wheelChair,int i)
+        {
+            Panel panel = new Panel();
+            panel.Name = "pn"+wheelChair.id;
+            panel.Location= new Point(3,24+i);
+            panel.Size = new Size(537, 34);
+            pnWheelChair.Controls.Add(panel);
+
+            //Textbox Name
+            TextBox textBox = new TextBox();
+            textBox.Name = "txb"+wheelChair.id+"Name";
+            textBox.Text = wheelChair.id;
+            textBox.Location = new Point(0, 6);
+            textBox.ReadOnly = true;
+            textBox.Size = new Size(124, 20);
+            textBox.Cursor = Cursors.Arrow;
+            textBox.GotFocus += textBox_GotFocus;
+            panel.Controls.Add(textBox);
+
+            //Textbox User
+            TextBox textbUser = new TextBox();
+            textbUser.Name = "txb" + wheelChair.id+ "User";
+            textbUser.Text = wheelChair.userName;
+            textbUser.ReadOnly = true;
+            textbUser.Location = new Point(130, 6);
+            textbUser.Size = new Size(100, 20);
+            textbUser.Cursor = Cursors.Arrow;
+            textbUser.GotFocus += textBox_GotFocus;
+            panel.Controls.Add(textbUser);
+
+            //Textbox Room
+            TextBox txbRoom = new TextBox();
+            txbRoom.Name = "txb" + wheelChair.id+"Room" ;
+            txbRoom.Text = wheelChair.roomID;
+            txbRoom.ReadOnly = true;
+            txbRoom.Location = new Point(236, 6);
+            txbRoom.Size = new Size(100, 20);
+            txbRoom.Cursor = Cursors.Arrow;
+            txbRoom.GotFocus += textBox_GotFocus;
+            panel.Controls.Add(txbRoom);
+
+            //Textbox Block
+            TextBox txbBlock = new TextBox();
+            txbBlock.Name = "txb" + wheelChair.id+ "Block";
+            txbBlock.Text = wheelChair.blockID;
+            txbBlock.ReadOnly = true;
+            txbBlock.Location = new Point(342, 6);
+            txbBlock.Size = new Size(100, 20);
+            txbBlock.Cursor = Cursors.Arrow;
+            txbBlock.GotFocus += textBox_GotFocus;
+            panel.Controls.Add(txbBlock);
+
+
+            //Textbox Status
+            TextBox txbStatus = new TextBox();
+            txbStatus.Name = "txb" + wheelChair.id + "Status";
+            txbStatus.ReadOnly = true;
+            txbStatus.Location = new Point(448, 6);
+            txbStatus.BackColor = Color.Green;
+            txbStatus.Size = new Size(86, 20);
+            txbStatus.Cursor = Cursors.Arrow;
+            txbStatus.GotFocus += textBox_GotFocus;
+            panel.Controls.Add(txbStatus);
+        }
+
+        private void textBox_GotFocus(object sender, EventArgs e)
+        {
+            ((TextBox)sender).Parent.Focus();
+            
         }
     }
 }
