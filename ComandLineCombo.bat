@@ -1,4 +1,4 @@
 git add *
-git commit -m "Change KhueHM"
+git commit -m "Cặc"
 git pull
 git push
