@@ -43,16 +43,17 @@ int main (void)
 
     /* Start...! */
     /* Check FXOS8700CQ Connection */
+    /*
     while (FXOS8700CQ_WhoAmI_Check() == 0)
     {
         ;
     }
-    /* Check FXOS8700CQ Connection */
+    /* Check FXOS8700CQ Connection
     while (FXAS21002C_WhoAmI_Check() == 0)
     {
         ;
     }
-
+    */
     while(1)
     {
         EventHandling();
