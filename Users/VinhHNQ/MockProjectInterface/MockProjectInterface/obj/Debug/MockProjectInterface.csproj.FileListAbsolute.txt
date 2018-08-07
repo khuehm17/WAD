@@ -12,7 +12,6 @@ D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterfa
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\bin\Debug\MockProjectInterface.exe
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\bin\Debug\MockProjectInterface.pdb
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.csprojResolveAssemblyReference.cache
-D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.Form1.resources
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.Properties.Resources.resources
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.csproj.GenerateResource.Cache
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.csproj.CoreCompileInputs.cache
@@ -22,3 +21,7 @@ D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterfa
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\bin\Debug\WebDriver.dll
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\bin\Debug\EPPlus.xml
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\bin\Debug\WebDriver.xml
+D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.Add.resources
+D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.Delete.resources
+D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.Main.resources
+D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Debug\MockProjectInterface.ModifyForm.resources
