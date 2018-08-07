@@ -44,25 +44,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnWheelChair = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txbUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
-            this.txbName = new System.Windows.Forms.TextBox();
-            this.txbStatus = new System.Windows.Forms.TextBox();
-            this.txbBlock = new System.Windows.Forms.TextBox();
-            this.txbRoom = new System.Windows.Forms.TextBox();
             this.txbThongTin = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClr = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnWheelChair.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // serialPort1
@@ -165,7 +158,7 @@
             this.comboBox1.Location = new System.Drawing.Point(3, 26);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 21);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox1.TabIndex = 1;
             // 
             // label1
             // 
@@ -201,7 +194,7 @@
             // 
             // pnWheelChair
             // 
-            this.pnWheelChair.Controls.Add(this.panel3);
+            this.pnWheelChair.AutoScroll = true;
             this.pnWheelChair.Controls.Add(this.label5);
             this.pnWheelChair.Controls.Add(this.label4);
             this.pnWheelChair.Controls.Add(this.label3);
@@ -222,14 +215,6 @@
             this.label5.Size = new System.Drawing.Size(37, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "User";
-            // 
-            // txbUser
-            // 
-            this.txbUser.Location = new System.Drawing.Point(130, 6);
-            this.txbUser.Name = "txbUser";
-            this.txbUser.ReadOnly = true;
-            this.txbUser.Size = new System.Drawing.Size(100, 20);
-            this.txbUser.TabIndex = 8;
             // 
             // label4
             // 
@@ -271,42 +256,9 @@
             this.lbName.ForeColor = System.Drawing.Color.Black;
             this.lbName.Location = new System.Drawing.Point(3, 5);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(42, 16);
+            this.lbName.Size = new System.Drawing.Size(21, 16);
             this.lbName.TabIndex = 4;
-            this.lbName.Text = "Name";
-            // 
-            // txbName
-            // 
-            this.txbName.Location = new System.Drawing.Point(0, 6);
-            this.txbName.Name = "txbName";
-            this.txbName.ReadOnly = true;
-            this.txbName.Size = new System.Drawing.Size(124, 20);
-            this.txbName.TabIndex = 3;
-            this.txbName.TextChanged += new System.EventHandler(this.txbName_TextChanged);
-            // 
-            // txbStatus
-            // 
-            this.txbStatus.Location = new System.Drawing.Point(448, 6);
-            this.txbStatus.Name = "txbStatus";
-            this.txbStatus.ReadOnly = true;
-            this.txbStatus.Size = new System.Drawing.Size(86, 20);
-            this.txbStatus.TabIndex = 2;
-            // 
-            // txbBlock
-            // 
-            this.txbBlock.Location = new System.Drawing.Point(342, 6);
-            this.txbBlock.Name = "txbBlock";
-            this.txbBlock.ReadOnly = true;
-            this.txbBlock.Size = new System.Drawing.Size(100, 20);
-            this.txbBlock.TabIndex = 1;
-            // 
-            // txbRoom
-            // 
-            this.txbRoom.Location = new System.Drawing.Point(236, 6);
-            this.txbRoom.Name = "txbRoom";
-            this.txbRoom.ReadOnly = true;
-            this.txbRoom.Size = new System.Drawing.Size(100, 20);
-            this.txbRoom.TabIndex = 0;
+            this.lbName.Text = "ID";
             // 
             // txbThongTin
             // 
@@ -351,18 +303,6 @@
             this.btnClr.UseVisualStyleBackColor = false;
             this.btnClr.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txbName);
-            this.panel3.Controls.Add(this.txbUser);
-            this.panel3.Controls.Add(this.txbRoom);
-            this.panel3.Controls.Add(this.txbBlock);
-            this.panel3.Controls.Add(this.txbStatus);
-            this.panel3.Location = new System.Drawing.Point(3, 24);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(537, 34);
-            this.panel3.TabIndex = 10;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,8 +327,6 @@
             this.pnWheelChair.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,16 +351,10 @@
         private System.Windows.Forms.TextBox txbThongTin;
         private System.Windows.Forms.Panel pnWheelChair;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txbUser;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.TextBox txbName;
-        private System.Windows.Forms.TextBox txbStatus;
-        private System.Windows.Forms.TextBox txbBlock;
-        private System.Windows.Forms.TextBox txbRoom;
-        private System.Windows.Forms.Panel panel3;
     }
 }
 
