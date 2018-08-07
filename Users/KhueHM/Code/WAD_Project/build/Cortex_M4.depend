@@ -1954,14 +1954,20 @@
 1533483104 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.c
 	"Sys_Delay.h"
 
-1533200349 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
+1533525562 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
 	"FXAS21002C.h"
 	"FXOS8700CQ.h"
 	"Lora.h"
+	"Sys_Delay.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
 
-1533477129 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\hardware_init.c
+1533518970 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\hardware_init.c
 	"board.h"
 	"pin_mux.h"
+	"board.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
 
 1531923287 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\board\udoo_neo\src\board.c
 	<stdio.h>
@@ -2130,7 +2136,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1533195596 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
+1533525822 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
 	<stdio.h>
 	"FXOS8700CQ.h"
 	"FXAS21002C.h"
@@ -2138,6 +2144,8 @@
 	"I2C_RW_Register.h"
 	"Sys_Delay.h"
 	"debug_console_imx.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
 
 1533195549 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.h
 	<stdint.h>
@@ -2157,14 +2165,14 @@
 	"FXOS8700CQ.h"
 	"Lora.h"
 
-1533483810 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\safebutton.c
+1533523545 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\safebutton.c
 	<stdio.h>
 	"board.h"
 	"gpio_pins.h"
 	"gpio_imx.h"
 	"debug_console_imx.h"
-	"rdc_semaphore.h"
 	"Sys_Delay.h"
+	"Lora.h"
 
 1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.c
 	"FXAS21002C.h"

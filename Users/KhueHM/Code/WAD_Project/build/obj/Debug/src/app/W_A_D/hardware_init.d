@@ -11,4 +11,6 @@ obj\debug\src\app\w_a_d\hardware_init.o: ..\src\app\W_A_D\hardware_init.c \
  ..\src\platform\drivers\inc/rdc_defs_imx6sx.h \
  ..\src\platform\drivers\inc/ccm_imx6sx.h \
  ..\src\board\udoo_neo\inc/clock_freq.h \
- ..\src\board\udoo_neo\inc/pin_mux.h
+ ..\src\board\udoo_neo\inc/pin_mux.h \
+ ..\src\board\udoo_neo\inc/gpio_pins.h \
+ ..\src\platform\drivers\inc/gpio_imx.h

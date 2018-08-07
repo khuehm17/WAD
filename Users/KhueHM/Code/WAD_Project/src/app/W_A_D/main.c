@@ -16,6 +16,8 @@
 #include "I2C_RW_Register.h"
 #include "Sys_Delay.h"
 #include "debug_console_imx.h"
+#include "gpio_pins.h"
+#include "gpio_imx.h"
 
 /*
  * Global variables and constants Declaration
@@ -29,6 +31,14 @@ int main (void)
     hardware_init();
     SystemInit();
 
+    I2C_FXAS21002C_Init();
+    I2C_FXOS8700CQ_Init();
+    FXAS21002C_Init();
+    FXOS8700CQ_Init();
+
+    GPIO_WritePinOutput(GPIO6_BASE_PTR, 14, gpioPinSet);
+
+    Systick_Delay_Init();
     //FXOS8700CQ_Accel_Calib();
 
     /* Start...! */
@@ -45,11 +55,7 @@ int main (void)
 
     while(1)
     {
-        AccidentDetect();
+        EventHandling();
         ms_delay(300);
     }
 }
-
-
-
-

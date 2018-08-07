@@ -14,5 +14,5 @@ obj\debug\src\app\w_a_d\safebutton.o: ..\src\app\W_A_D\SafeButton.c \
  ..\src\board\udoo_neo\inc/gpio_pins.h \
  ..\src\platform\drivers\inc/gpio_imx.h \
  ..\src\platform\utilities\inc/debug_console_imx.h \
- ..\src\platform\drivers\inc/rdc_semaphore.h \
- ..\src\app\Sys_Delay/Sys_Delay.h
+ ..\src\app\Sys_Delay/Sys_Delay.h ..\src\app\Lora/Lora.h \
+ ..\src\platform\drivers\inc/uart_imx.h
