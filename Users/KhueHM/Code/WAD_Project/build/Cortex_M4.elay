@@ -12,9 +12,13 @@
 			<Collapse line="103" />
 		</Folding>
 	</File>
-	<File name="..\src\app\FXAS21002C\FXAS21002C.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\src\app\FXAS21002C\FXAS21002C.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
+			<Cursor1 position="3110" topLine="39" />
+=======
 			<Cursor1 position="3105" topLine="49" />
+>>>>>>> 73a1d9f58a8506a2aafe3330bad563bc036e336f
 		</Cursor>
 	</File>
 	<File name="..\src\app\FXOS8700CQ\FXOS8700CQ.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,9 +36,13 @@
 			<Collapse line="269" />
 		</Folding>
 	</File>
-	<File name="..\src\app\FXOS8700CQ\FXOS8700CQ.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\src\app\FXOS8700CQ\FXOS8700CQ.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
+			<Cursor1 position="11486" topLine="174" />
+=======
 			<Cursor1 position="11425" topLine="172" />
+>>>>>>> 73a1d9f58a8506a2aafe3330bad563bc036e336f
 		</Cursor>
 	</File>
 	<File name="..\src\app\I2C_RW_Register\I2C_RW_Register.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -80,9 +88,15 @@
 			<Cursor1 position="2499" topLine="48" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
+	<File name="..\src\app\W_A_D\main.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="275" topLine="7" />
+=======
 	<File name="..\src\app\W_A_D\main.c" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="897" topLine="29" />
+>>>>>>> 73a1d9f58a8506a2aafe3330bad563bc036e336f
 		</Cursor>
 	</File>
 	<File name="..\src\board\udoo_neo\inc\board.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -115,9 +129,9 @@
 			<Cursor1 position="11905" topLine="171" />
 		</Cursor>
 	</File>
-	<File name="..\src\platform\devices\MCIMX6X\startup\gcc\startup_MCIMX6X_M4.S" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\src\platform\devices\MCIMX6X\startup\gcc\startup_MCIMX6X_M4.S" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="17496" topLine="208" />
+			<Cursor1 position="18108" topLine="208" />
 		</Cursor>
 	</File>
 	<File name="..\src\platform\devices\MCIMX6X\startup\system_MCIMX6X_M4.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
