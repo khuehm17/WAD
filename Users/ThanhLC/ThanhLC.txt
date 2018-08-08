@@ -1,0 +1,5 @@
+Le Chi Thanh - a LORA Expert
+
+Task 1: Connect and comunication with Host Server via LORA.
+Task 2: Handle auto starting  script on Linux booting up.
+Task 3: Write project report.

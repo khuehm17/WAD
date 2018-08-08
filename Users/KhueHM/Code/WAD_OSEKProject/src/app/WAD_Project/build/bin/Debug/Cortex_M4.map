@@ -1020,7 +1020,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\cancelalarm.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\cancelalarm.o
  .debug_line    0x00000000      0x369 obj\debug\~#\~#\os\osek\src\cancelalarm.o
- .debug_str     0x00000000     0x4e92 obj\debug\~#\~#\os\osek\src\cancelalarm.o
+ .debug_str     0x00000000     0x4e9b obj\debug\~#\~#\os\osek\src\cancelalarm.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\cancelalarm.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\cancelalarm.o
  .ARM.attributes
@@ -1073,7 +1073,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\chaintask.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\chaintask.o
  .debug_line    0x00000000      0x395 obj\debug\~#\~#\os\osek\src\chaintask.o
- .debug_str     0x00000000     0x503a obj\debug\~#\~#\os\osek\src\chaintask.o
+ .debug_str     0x00000000     0x5043 obj\debug\~#\~#\os\osek\src\chaintask.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\chaintask.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\chaintask.o
  .ARM.attributes
@@ -1162,7 +1162,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
  .debug_line    0x00000000      0x34a obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
- .debug_str     0x00000000     0x4d89 obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
+ .debug_str     0x00000000     0x4d92 obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
  .ARM.attributes
                 0x00000000       0x39 obj\debug\~#\~#\os\osek\src\cortexm4\os_arch.o
@@ -1330,7 +1330,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
  .debug_line    0x00000000      0x366 obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
- .debug_str     0x00000000     0x4dde obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
+ .debug_str     0x00000000     0x4de7 obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
  .debug_frame   0x00000000       0x30 obj\debug\~#\~#\os\osek\src\getactiveapplicationmode.o
  .ARM.attributes
@@ -1383,7 +1383,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\getalarm.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\getalarm.o
  .debug_line    0x00000000      0x367 obj\debug\~#\~#\os\osek\src\getalarm.o
- .debug_str     0x00000000     0x4eb7 obj\debug\~#\~#\os\osek\src\getalarm.o
+ .debug_str     0x00000000     0x4ec0 obj\debug\~#\~#\os\osek\src\getalarm.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\getalarm.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\getalarm.o
  .ARM.attributes
@@ -1436,7 +1436,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\getalarmbase.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\getalarmbase.o
  .debug_line    0x00000000      0x36e obj\debug\~#\~#\os\osek\src\getalarmbase.o
- .debug_str     0x00000000     0x4fce obj\debug\~#\~#\os\osek\src\getalarmbase.o
+ .debug_str     0x00000000     0x4fd7 obj\debug\~#\~#\os\osek\src\getalarmbase.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\getalarmbase.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\getalarmbase.o
  .ARM.attributes
@@ -1489,7 +1489,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\getevent.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\getevent.o
  .debug_line    0x00000000      0x36d obj\debug\~#\~#\os\osek\src\getevent.o
- .debug_str     0x00000000     0x5006 obj\debug\~#\~#\os\osek\src\getevent.o
+ .debug_str     0x00000000     0x500f obj\debug\~#\~#\os\osek\src\getevent.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\getevent.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\getevent.o
  .ARM.attributes
@@ -1539,7 +1539,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\getresource.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\getresource.o
  .debug_line    0x00000000      0x345 obj\debug\~#\~#\os\osek\src\getresource.o
- .debug_str     0x00000000     0x4d84 obj\debug\~#\~#\os\osek\src\getresource.o
+ .debug_str     0x00000000     0x4d8d obj\debug\~#\~#\os\osek\src\getresource.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\getresource.o
  .ARM.attributes
                 0x00000000       0x39 obj\debug\~#\~#\os\osek\src\getresource.o
@@ -1591,7 +1591,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\gettaskid.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\gettaskid.o
  .debug_line    0x00000000      0x356 obj\debug\~#\~#\os\osek\src\gettaskid.o
- .debug_str     0x00000000     0x4dbf obj\debug\~#\~#\os\osek\src\gettaskid.o
+ .debug_str     0x00000000     0x4dc8 obj\debug\~#\~#\os\osek\src\gettaskid.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\gettaskid.o
  .debug_frame   0x00000000       0x38 obj\debug\~#\~#\os\osek\src\gettaskid.o
  .ARM.attributes
@@ -1644,7 +1644,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\gettaskstate.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\gettaskstate.o
  .debug_line    0x00000000      0x36d obj\debug\~#\~#\os\osek\src\gettaskstate.o
- .debug_str     0x00000000     0x4f1b obj\debug\~#\~#\os\osek\src\gettaskstate.o
+ .debug_str     0x00000000     0x4f24 obj\debug\~#\~#\os\osek\src\gettaskstate.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\gettaskstate.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\gettaskstate.o
  .ARM.attributes
@@ -1772,7 +1772,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\releaseresource.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\releaseresource.o
  .debug_line    0x00000000      0x349 obj\debug\~#\~#\os\osek\src\releaseresource.o
- .debug_str     0x00000000     0x4d88 obj\debug\~#\~#\os\osek\src\releaseresource.o
+ .debug_str     0x00000000     0x4d91 obj\debug\~#\~#\os\osek\src\releaseresource.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\releaseresource.o
  .ARM.attributes
                 0x00000000       0x39 obj\debug\~#\~#\os\osek\src\releaseresource.o
@@ -1863,7 +1863,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\setabsalarm.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\setabsalarm.o
  .debug_line    0x00000000      0x385 obj\debug\~#\~#\os\osek\src\setabsalarm.o
- .debug_str     0x00000000     0x5054 obj\debug\~#\~#\os\osek\src\setabsalarm.o
+ .debug_str     0x00000000     0x505d obj\debug\~#\~#\os\osek\src\setabsalarm.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\setabsalarm.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\setabsalarm.o
  .ARM.attributes
@@ -1955,7 +1955,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x9c obj\debug\~#\~#\os\osek\src\setrelalarm.o
  .debug_macro   0x00000000       0x88 obj\debug\~#\~#\os\osek\src\setrelalarm.o
  .debug_line    0x00000000      0x384 obj\debug\~#\~#\os\osek\src\setrelalarm.o
- .debug_str     0x00000000     0x5038 obj\debug\~#\~#\os\osek\src\setrelalarm.o
+ .debug_str     0x00000000     0x5041 obj\debug\~#\~#\os\osek\src\setrelalarm.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\os\osek\src\setrelalarm.o
  .debug_frame   0x00000000       0x34 obj\debug\~#\~#\os\osek\src\setrelalarm.o
  .ARM.attributes
@@ -3668,7 +3668,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x155 obj\debug\~#\~#\services\src\message.o
  .debug_macro   0x00000000      0x108 obj\debug\~#\~#\services\src\message.o
  .debug_line    0x00000000      0x528 obj\debug\~#\~#\services\src\message.o
- .debug_str     0x00000000     0x8d43 obj\debug\~#\~#\services\src\message.o
+ .debug_str     0x00000000     0x8d4c obj\debug\~#\~#\services\src\message.o
  .comment       0x00000000       0x6f obj\debug\~#\~#\services\src\message.o
  .debug_frame   0x00000000      0x1a0 obj\debug\~#\~#\services\src\message.o
  .ARM.attributes
@@ -5190,7 +5190,7 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
  .debug_line    0x00007dad      0x68f obj\debug\~#\~#\platform\utilities\src\debug_console_imx.o
  .debug_line    0x0000843c      0x70c obj\debug\~#\~#\platform\utilities\src\print_scan.o
 
-.debug_str      0x00000000   0x1b7e03
+.debug_str      0x00000000   0x1b7e54
  .debug_str     0x00000000   0x1ab83b obj\debug\lib\fxas21002c\fxas21002c.o
                              0x1aba75 (size before relaxing)
  .debug_str     0x001ab83b     0x10f8 obj\debug\lib\fxos8700cq\fxos8700cq.o
@@ -5201,57 +5201,57 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
                              0x1a902a (size before relaxing)
  .debug_str     0x001ad107       0x26 obj\debug\main\hardware_init.o
                              0x1a8a17 (size before relaxing)
- .debug_str     0x001ad12d     0x1de2 obj\debug\main\wad_osek.o
-                             0x1ae504 (size before relaxing)
- .debug_str     0x001aef0f     0x161a obj\debug\~#\~#\board\udoo_neo\src\board.o
+ .debug_str     0x001ad12d     0x1e33 obj\debug\main\wad_osek.o
+                             0x1ae50d (size before relaxing)
+ .debug_str     0x001aef60     0x161a obj\debug\~#\~#\board\udoo_neo\src\board.o
                              0x1ad76e (size before relaxing)
- .debug_str     0x001b0529      0x943 obj\debug\~#\~#\board\udoo_neo\src\clock_freq.o
+ .debug_str     0x001b057a      0x943 obj\debug\~#\~#\board\udoo_neo\src\clock_freq.o
                              0x1a8f41 (size before relaxing)
- .debug_str     0x001b0e6c     0x3bef obj\debug\~#\~#\board\udoo_neo\src\pin_mux.o
+ .debug_str     0x001b0ebd     0x3bef obj\debug\~#\~#\board\udoo_neo\src\pin_mux.o
                              0x1ab119 (size before relaxing)
- .debug_str     0x001b4a5b      0xde8 obj\debug\~#\~#\os\config\src\cortexm4\os_internal_arch_cfg.o
-                             0x1a8e18 (size before relaxing)
- .debug_str     0x001b5843       0x6f obj\debug\~#\~#\os\config\src\os_cfg.o
-                               0x4dd0 (size before relaxing)
- .debug_str     0x001b58b2      0x564 obj\debug\~#\~#\os\config\src\os_internal_cfg.o
-                               0x5354 (size before relaxing)
- .debug_str     0x001b5e16       0x88 obj\debug\~#\~#\os\osek\src\activatetask.o
-                               0x5030 (size before relaxing)
- .debug_str     0x001b5e9e       0x2d obj\debug\~#\~#\os\osek\src\clearevent.o
-                               0x5038 (size before relaxing)
- .debug_str     0x001b5ecb      0x127 obj\debug\~#\~#\os\osek\src\cortexm4\os_internal_arch.o
-                               0x5086 (size before relaxing)
- .debug_str     0x001b5ff2       0x65 obj\debug\~#\~#\os\osek\src\cortexm4\startos_arch.o
-                               0x4dc6 (size before relaxing)
- .debug_str     0x001b6057      0x7ed obj\debug\~#\~#\os\osek\src\cortexm4\startos_arch_systick.o
+ .debug_str     0x001b4aac      0xde8 obj\debug\~#\~#\os\config\src\cortexm4\os_internal_arch_cfg.o
+                             0x1a8e21 (size before relaxing)
+ .debug_str     0x001b5894       0x6f obj\debug\~#\~#\os\config\src\os_cfg.o
+                               0x4dd9 (size before relaxing)
+ .debug_str     0x001b5903      0x564 obj\debug\~#\~#\os\config\src\os_internal_cfg.o
+                               0x535d (size before relaxing)
+ .debug_str     0x001b5e67       0x88 obj\debug\~#\~#\os\osek\src\activatetask.o
+                               0x5039 (size before relaxing)
+ .debug_str     0x001b5eef       0x2d obj\debug\~#\~#\os\osek\src\clearevent.o
+                               0x5041 (size before relaxing)
+ .debug_str     0x001b5f1c      0x127 obj\debug\~#\~#\os\osek\src\cortexm4\os_internal_arch.o
+                               0x508f (size before relaxing)
+ .debug_str     0x001b6043       0x65 obj\debug\~#\~#\os\osek\src\cortexm4\startos_arch.o
+                               0x4dcf (size before relaxing)
+ .debug_str     0x001b60a8      0x7ed obj\debug\~#\~#\os\osek\src\cortexm4\startos_arch_systick.o
                              0x1a7ccc (size before relaxing)
- .debug_str     0x001b6844       0x53 obj\debug\~#\~#\os\osek\src\os.o
-                               0x4de6 (size before relaxing)
- .debug_str     0x001b6897       0xf5 obj\debug\~#\~#\os\osek\src\os_internal.o
-                               0x531a (size before relaxing)
- .debug_str     0x001b698c       0x3d obj\debug\~#\~#\os\osek\src\schedule.o
-                               0x5068 (size before relaxing)
- .debug_str     0x001b69c9       0x29 obj\debug\~#\~#\os\osek\src\setevent.o
-                               0x504c (size before relaxing)
- .debug_str     0x001b69f2       0x2d obj\debug\~#\~#\os\osek\src\shutdownos.o
-                               0x4d9f (size before relaxing)
- .debug_str     0x001b6a1f       0x27 obj\debug\~#\~#\os\osek\src\startos.o
-                               0x4f22 (size before relaxing)
- .debug_str     0x001b6a46       0x33 obj\debug\~#\~#\os\osek\src\terminatetask.o
-                               0x4f3d (size before relaxing)
- .debug_str     0x001b6a79       0x2b obj\debug\~#\~#\os\osek\src\waitevent.o
-                               0x5047 (size before relaxing)
- .debug_str     0x001b6aa4      0x158 obj\debug\~#\~#\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
+ .debug_str     0x001b6895       0x53 obj\debug\~#\~#\os\osek\src\os.o
+                               0x4def (size before relaxing)
+ .debug_str     0x001b68e8       0xf5 obj\debug\~#\~#\os\osek\src\os_internal.o
+                               0x5323 (size before relaxing)
+ .debug_str     0x001b69dd       0x3d obj\debug\~#\~#\os\osek\src\schedule.o
+                               0x5071 (size before relaxing)
+ .debug_str     0x001b6a1a       0x29 obj\debug\~#\~#\os\osek\src\setevent.o
+                               0x5055 (size before relaxing)
+ .debug_str     0x001b6a43       0x2d obj\debug\~#\~#\os\osek\src\shutdownos.o
+                               0x4da8 (size before relaxing)
+ .debug_str     0x001b6a70       0x27 obj\debug\~#\~#\os\osek\src\startos.o
+                               0x4f2b (size before relaxing)
+ .debug_str     0x001b6a97       0x33 obj\debug\~#\~#\os\osek\src\terminatetask.o
+                               0x4f46 (size before relaxing)
+ .debug_str     0x001b6aca       0x2b obj\debug\~#\~#\os\osek\src\waitevent.o
+                               0x5050 (size before relaxing)
+ .debug_str     0x001b6af5      0x158 obj\debug\~#\~#\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
                              0x1a792b (size before relaxing)
- .debug_str     0x001b6bfc      0x116 obj\debug\~#\~#\platform\drivers\src\ccm_analog_imx6sx.o
+ .debug_str     0x001b6c4d      0x116 obj\debug\~#\~#\platform\drivers\src\ccm_analog_imx6sx.o
                              0x1a82c5 (size before relaxing)
- .debug_str     0x001b6d12       0xa5 obj\debug\~#\~#\platform\drivers\src\i2c_imx.o
+ .debug_str     0x001b6d63       0xa5 obj\debug\~#\~#\platform\drivers\src\i2c_imx.o
                              0x1a7a57 (size before relaxing)
- .debug_str     0x001b6db7      0x301 obj\debug\~#\~#\platform\drivers\src\uart_imx.o
+ .debug_str     0x001b6e08      0x301 obj\debug\~#\~#\platform\drivers\src\uart_imx.o
                              0x1a7d6f (size before relaxing)
- .debug_str     0x001b70b8      0x3fe obj\debug\~#\~#\platform\utilities\src\debug_console_imx.o
+ .debug_str     0x001b7109      0x3fe obj\debug\~#\~#\platform\utilities\src\debug_console_imx.o
                              0x1aba0c (size before relaxing)
- .debug_str     0x001b74b6      0x94d obj\debug\~#\~#\platform\utilities\src\print_scan.o
+ .debug_str     0x001b7507      0x94d obj\debug\~#\~#\platform\utilities\src\print_scan.o
                                0x7b84 (size before relaxing)
 
 .comment        0x00000000       0x6e
