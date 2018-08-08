@@ -85,7 +85,7 @@ namespace MockProjectInterface
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {;
-            MessageBox.Show("© 2018 WAD-Team All Rights Reserved");
+            MessageBox.Show("Wheelchair Accident Detector\r\nVersion 1.0.1\r\nCopyright © 2018 WAD-Team\r\nAll Rights Reserved ");
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace MockProjectInterface
 
 
 
-        private SoundPlayer soundPlayer = new SoundPlayer(@"..\..\RedAlert.wav");
+        private SoundPlayer soundPlayer = new SoundPlayer(@"..\Resources\RedAlert.wav");
         //Handle accident event
         private void accidentEvent(string accCode)
         {
@@ -174,6 +174,7 @@ namespace MockProjectInterface
                
             }
             else{
+                this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Safety confirmed signal incoming \r\n"; }));
                 stillOkEvent(id);
             }
         }
@@ -203,7 +204,7 @@ namespace MockProjectInterface
         {
             try
             {
-                var package = new ExcelPackage(new FileInfo(@"..\..\ImportData.xlsx"));
+                var package = new ExcelPackage(new FileInfo(@"..\Resources\ImportData.xlsx"));
 
                 ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
 
