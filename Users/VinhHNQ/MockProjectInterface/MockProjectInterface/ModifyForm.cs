@@ -56,7 +56,22 @@ namespace MockProjectInterface
             var package = new ExcelPackage(new FileInfo(@"..\Resources\ImportData.xlsx"));
 
             ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
-            for(int i = 0; i < list.Count ; i++)
+            for(int i= worksheet.Dimension.Start.Row + 1; i <= worksheet.Dimension.End.Row; i++)
+            {
+                int j = 1;
+
+                if (worksheet.Cells[i, j].Value == null)
+                {
+                    continue;
+                }
+                worksheet.Cells[i, j++].Value = null;
+                worksheet.Cells[i, j++].Value = null;
+                worksheet.Cells[i, j++].Value = null;
+                worksheet.Cells[i, j++].Value = null;
+                worksheet.Cells[i, j++].Value = null;
+            }
+
+            for (int i = 0; i < list.Count ; i++)
             {
                 int j = 1;
                 worksheet.Cells[i + 2, j++].Value = list[i].id;
@@ -66,7 +81,6 @@ namespace MockProjectInterface
                 worksheet.Cells[i + 2, j++].Value = 1;
             }
             package.Save();
-           
         }
 
         //Load data from excel
