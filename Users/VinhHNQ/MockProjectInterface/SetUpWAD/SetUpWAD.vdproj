@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:SetUpWAD"
+"ProjectName" = "8:WAD"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -128,6 +128,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -390,7 +398,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SetUpWAD"
         "ProductCode" = "8:{3EBEE092-878D-4409-AAC9-B334FE67ABFC}"
-        "PackageCode" = "8:{76B19D14-F31C-46AE-A606-05FDAB8FA830}"
+        "PackageCode" = "8:{9D2052A7-996C-490D-8275-03887C6A3AFF}"
         "UpgradeCode" = "8:{91769D84-99DE-45FD-982F-9E77AA814575}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -401,7 +409,7 @@
         "Manufacturer" = "8:WAD Team "
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:SetUpWAD"
+        "Title" = "8:WAD"
         "Subject" = "8:"
         "ARPCONTACT" = "8:WAD Team"
         "Keywords" = "8:"

@@ -371,9 +371,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(158)))), ((int)(((byte)(162)))));
             this.label6.Location = new System.Drawing.Point(690, 5);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 16);
+            this.label6.Size = new System.Drawing.Size(78, 16);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Version 1.0.1";
+            this.label6.Text = "Version 1.0.2";
             // 
             // Main
             // 
