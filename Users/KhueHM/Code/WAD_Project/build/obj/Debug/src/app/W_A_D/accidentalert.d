@@ -15,4 +15,6 @@ obj\debug\src\app\w_a_d\accidentalert.o: ..\src\app\W_A_D\AccidentAlert.c \
  ..\src\platform\drivers\inc/i2c_imx.h ..\src\app\Sys_Delay/Sys_Delay.h \
  ..\src\app\I2C_RW_Register/I2C_RW_Register.h \
  ..\src\app\FXOS8700CQ/FXOS8700CQ.h ..\src\app\Lora/Lora.h \
- ..\src\platform\drivers\inc/uart_imx.h
+ ..\src\platform\drivers\inc/uart_imx.h \
+ ..\src\board\udoo_neo\inc/gpio_pins.h \
+ ..\src\platform\drivers\inc/gpio_imx.h

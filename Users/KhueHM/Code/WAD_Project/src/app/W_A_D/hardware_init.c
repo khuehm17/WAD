@@ -30,18 +30,45 @@
 
 #include "board.h"
 #include "pin_mux.h"
+#include "board.h"
+#include "gpio_pins.h"
+#include "gpio_imx.h"
+
+/*
+ * Button Initialization
+ */
+void GPIO_Ctrl_InitButton()
+{
+    gpio_init_config_t ButtonInitConfig = {
+        .pin = 8,
+        .direction = gpioDigitalInput,
+        .interruptMode = gpioIntHighLevel
+        };
+    GPIO_Init(GPIO4_BASE_PTR, &ButtonInitConfig);
+    /* Enable GPIO pin interrupt */
+    GPIO_SetPinIntMode(GPIO4_BASE_PTR, 8, true);
+    /* Clear the interrupt state */
+    GPIO_ClearStatusFlag(GPIO4_BASE_PTR, 8);
+}
+
+/*
+ * Buzzer Initialization
+ */
+void GPIO_Ctrl_InitBuzzer()
+{
+    gpio_init_config_t buzzerInitConfig = {
+        .pin = 14,
+        .direction = gpioDigitalOutput,
+        .interruptMode = gpioNoIntmode
+    };
+    GPIO_Init(GPIO6_BASE_PTR, &buzzerInitConfig);
+}
 
 
 void hardware_init(void)
 {
-    //UART_Lora_Init();
-    //Systick_Delay_Init();
-
-    //I2C_FXOS8700CQ_Init();
-    //I2C_FXAS21002C_Init();
-
-    //FXOS8700CQ_Init();
-    //FXAS21002C_Init();
+    GPIO_Ctrl_InitButton();
+    GPIO_Ctrl_InitBuzzer();
     /* Board specific RDC settings */
     BOARD_RdcInit();
 
