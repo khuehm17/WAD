@@ -1933,11 +1933,7 @@ LOAD c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-
 END GROUP
 OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
 
-<<<<<<< HEAD
-.debug_info     0x00000000     0x933e
-=======
-.debug_info     0x00000000     0x926b
->>>>>>> 311a75b8654ee8519437fa81f68bbd8a571da51a
+.debug_info     0x00000000     0x926f
  .debug_info    0x00000000      0x3ce obj\debug\src\app\fxas21002c\fxas21002c.o
  .debug_info    0x000003ce      0x4bc obj\debug\src\app\fxos8700cq\fxos8700cq.o
  .debug_info    0x0000088a      0x5a6 obj\debug\src\app\i2c_rw_register\i2c_rw_register.o
@@ -1945,31 +1941,17 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
  .debug_info    0x0000147d      0x83e obj\debug\src\app\sys_delay\sys_delay.o
  .debug_info    0x00001cbb      0x1a1 obj\debug\src\app\w_a_d\accidentalert.o
  .debug_info    0x00001e5c       0xab obj\debug\src\app\w_a_d\hardware_init.o
-<<<<<<< HEAD
- .debug_info    0x00001f07      0x1b6 obj\debug\src\app\w_a_d\main.o
- .debug_info    0x000020bd     0x11b6 obj\debug\src\board\udoo_neo\src\board.o
- .debug_info    0x00003273      0xf98 obj\debug\src\board\udoo_neo\src\clock_freq.o
- .debug_info    0x0000420b     0x2442 obj\debug\src\board\udoo_neo\src\pin_mux.o
- .debug_info    0x0000664d       0xa6 obj\debug\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.o
- .debug_info    0x000066f3      0x944 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
- .debug_info    0x00007037      0x698 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
- .debug_info    0x000076cf      0x3c1 obj\debug\src\platform\drivers\src\i2c_imx.o
- .debug_info    0x00007a90      0x9f7 obj\debug\src\platform\drivers\src\uart_imx.o
- .debug_info    0x00008487      0x8d0 obj\debug\src\platform\utilities\src\debug_console_imx.o
- .debug_info    0x00008d57      0x5e7 obj\debug\src\platform\utilities\src\print_scan.o
-=======
  .debug_info    0x00001f07       0xe7 obj\debug\src\app\w_a_d\main.o
  .debug_info    0x00001fee     0x11b6 obj\debug\src\board\udoo_neo\src\board.o
  .debug_info    0x000031a4      0xf98 obj\debug\src\board\udoo_neo\src\clock_freq.o
  .debug_info    0x0000413c     0x2442 obj\debug\src\board\udoo_neo\src\pin_mux.o
- .debug_info    0x0000657e       0xa2 obj\debug\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.o
- .debug_info    0x00006620      0x944 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
- .debug_info    0x00006f64      0x698 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
- .debug_info    0x000075fc      0x3c1 obj\debug\src\platform\drivers\src\i2c_imx.o
- .debug_info    0x000079bd      0x9f7 obj\debug\src\platform\drivers\src\uart_imx.o
- .debug_info    0x000083b4      0x8d0 obj\debug\src\platform\utilities\src\debug_console_imx.o
- .debug_info    0x00008c84      0x5e7 obj\debug\src\platform\utilities\src\print_scan.o
->>>>>>> 311a75b8654ee8519437fa81f68bbd8a571da51a
+ .debug_info    0x0000657e       0xa6 obj\debug\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.o
+ .debug_info    0x00006624      0x944 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
+ .debug_info    0x00006f68      0x698 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
+ .debug_info    0x00007600      0x3c1 obj\debug\src\platform\drivers\src\i2c_imx.o
+ .debug_info    0x000079c1      0x9f7 obj\debug\src\platform\drivers\src\uart_imx.o
+ .debug_info    0x000083b8      0x8d0 obj\debug\src\platform\utilities\src\debug_console_imx.o
+ .debug_info    0x00008c88      0x5e7 obj\debug\src\platform\utilities\src\print_scan.o
 
 .debug_abbrev   0x00000000     0x1802
  .debug_abbrev  0x00000000      0x160 obj\debug\src\app\fxas21002c\fxas21002c.o
@@ -2084,8 +2066,7 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
  .debug_str     0x000015f6       0x2f obj\debug\src\app\w_a_d\hardware_init.o
                                 0x1c3 (size before relaxing)
  .debug_str     0x00001625       0x1d obj\debug\src\app\w_a_d\main.o
-                                0x235 (size before relaxing)
-<<<<<<< HEAD
+                                0x1de (size before relaxing)
  .debug_str     0x00001642     0x17f0 obj\debug\src\board\udoo_neo\src\board.o
                                0x1a7a (size before relaxing)
  .debug_str     0x00002e32      0x710 obj\debug\src\board\udoo_neo\src\clock_freq.o
@@ -2104,30 +2085,6 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
                                 0x918 (size before relaxing)
  .debug_str     0x00007923      0x186 obj\debug\src\platform\utilities\src\print_scan.o
                                 0x38d (size before relaxing)
-=======
- .debug_str     0x000015f2       0x2f obj\debug\src\app\w_a_d\hardware_init.o
-                                0x1bf (size before relaxing)
- .debug_str     0x00001621       0x1d obj\debug\src\app\w_a_d\main.o
-                                0x1da (size before relaxing)
- .debug_str     0x0000163e     0x17f0 obj\debug\src\board\udoo_neo\src\board.o
-                               0x1a76 (size before relaxing)
- .debug_str     0x00002e2e      0x710 obj\debug\src\board\udoo_neo\src\clock_freq.o
-                               0x1153 (size before relaxing)
- .debug_str     0x0000353e     0x3bed obj\debug\src\board\udoo_neo\src\pin_mux.o
-                               0x3eca (size before relaxing)
- .debug_str     0x0000712b       0xe6 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
-                                0x67b (size before relaxing)
- .debug_str     0x00007211      0x114 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
-                                0x656 (size before relaxing)
- .debug_str     0x00007325       0xa3 obj\debug\src\platform\drivers\src\i2c_imx.o
-                                0x322 (size before relaxing)
- .debug_str     0x000073c8      0x2ff obj\debug\src\platform\drivers\src\uart_imx.o
-                                0x639 (size before relaxing)
- .debug_str     0x000076c7      0x258 obj\debug\src\platform\utilities\src\debug_console_imx.o
-                                0x914 (size before relaxing)
- .debug_str     0x0000791f      0x186 obj\debug\src\platform\utilities\src\print_scan.o
-                                0x389 (size before relaxing)
->>>>>>> 311a75b8654ee8519437fa81f68bbd8a571da51a
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e obj\debug\src\app\fxas21002c\fxas21002c.o
