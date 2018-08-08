@@ -64,7 +64,7 @@ void EventHandling()
             {
                 ;
             }
-            // Button Debounce
+            // Button De-bounce
             ms_delay(buttonDEBOUNCE);
         }
 
