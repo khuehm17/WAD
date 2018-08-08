@@ -94,7 +94,7 @@ namespace MockProjectInterface
         //Save data to excel file
         private void SaveData()
         {
-            var package = new ExcelPackage(new FileInfo(@"..\..\ImportData.xlsx"));
+            var package = new ExcelPackage(new FileInfo(@"..\Resources\ImportData.xlsx"));
 
             ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
             int j = 1;
@@ -112,7 +112,7 @@ namespace MockProjectInterface
         //Load data from excel
         private void LoadData()
         {
-            var package = new ExcelPackage(new FileInfo(@"..\..\ImportData.xlsx"));
+            var package = new ExcelPackage(new FileInfo(@"..\Resources\ImportData.xlsx"));
 
             ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
 

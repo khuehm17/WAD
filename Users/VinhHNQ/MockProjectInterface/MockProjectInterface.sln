@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockProjectInterface", "MockProjectInterface\MockProjectInterface.csproj", "{7992DDF0-D1F7-4513-848A-F3631FC89420}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetUpWAD", "SetUpWAD\SetUpWAD.vdproj", "{961B22D7-0D22-48D1-8089-3EF304FF4B2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{7992DDF0-D1F7-4513-848A-F3631FC89420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7992DDF0-D1F7-4513-848A-F3631FC89420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7992DDF0-D1F7-4513-848A-F3631FC89420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961B22D7-0D22-48D1-8089-3EF304FF4B2D}.Debug|Any CPU.ActiveCfg = Debug
+		{961B22D7-0D22-48D1-8089-3EF304FF4B2D}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

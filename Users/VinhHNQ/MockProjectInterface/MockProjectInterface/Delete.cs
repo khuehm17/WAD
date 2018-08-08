@@ -20,7 +20,7 @@ namespace MockProjectInterface
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var package = new ExcelPackage(new System.IO.FileInfo(@"..\..\ImportData.xlsx"));
+            var package = new ExcelPackage(new System.IO.FileInfo(@"..\Resources\ImportData.xlsx"));
 
             ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
             int j = 1;
