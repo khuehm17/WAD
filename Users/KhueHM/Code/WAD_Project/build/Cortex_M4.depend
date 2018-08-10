@@ -1926,19 +1926,19 @@
 1533195596 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.h
 	"board.h"
 
-1533195582 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.h
+1533796051 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.h
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
 	"i2c_imx.h"
 
-1533134794 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.c
+1533796053 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\i2c_rw_register\i2c_rw_register.c
 	"I2C_RW_Register.h"
 
-1532938903 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.c
+1533795986 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.c
 	"Lora.h"
 
-1533195570 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.h
+1533795988 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\lora\lora.h
 	<stdint.h>
 	<stdbool.h>
 	"uart_imx.h"
@@ -2136,7 +2136,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1533666716 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
+1533800479 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
 	<stdio.h>
 	"FXOS8700CQ.h"
 	"FXAS21002C.h"
@@ -2146,6 +2146,7 @@
 	"debug_console_imx.h"
 	"gpio_pins.h"
 	"gpio_imx.h"
+	"EventHandling.h"
 
 1533195549 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\fxas21002c\fxas21002c.h
 	<stdint.h>
@@ -2498,6 +2499,14 @@
 	"debug_console_imx.h"
 
 1533669165 source:d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\eventhandling.c
+	"FXAS21002C.h"
+	"FXOS8700CQ.h"
+	"Lora.h"
+	"Sys_Delay.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
+
+1533669165 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\eventhandling.h
 	"FXAS21002C.h"
 	"FXOS8700CQ.h"
 	"Lora.h"

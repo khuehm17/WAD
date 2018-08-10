@@ -51,13 +51,14 @@ void Lora_Send(const char *Data)
 /*
  * Lora Receive Data Function
  */
+/*
 unsigned char Lora_Receive()
 {
-    unsigned char Data = 0;
+    unsigned char Data;
     UART_ReceiveData(BOARD_DEBUG_UART_BASEADDR, Data, sizeof(Data));
     return Data;
 }
-
+*/
 /*
  * UART Send Data Function
  */

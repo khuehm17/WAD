@@ -113,7 +113,7 @@ void FXOS8700CQ_Init()
     FXOS8700CQ_Active();
     */
     FXOS8700CQ_Reset();
-    ms_delay(1);
+    //ms_delay(1);
     FXOS8700CQ_Standby();            // Standby Mode
     I2C_WriteRegister(FXOS8700CQ_I2C_ADDRESS, FXOS8700CQ_F_SETUP_REG, 0x01);
     I2C_WriteRegister(FXOS8700CQ_I2C_ADDRESS, FXOS8700CQ_M_CTRL_REG1, 0x9F);
