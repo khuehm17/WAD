@@ -2299,7 +2299,7 @@
 	<assert.h>
 	"device_imx.h"
 
-1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.c
+1533699856 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\sys_delay\sys_delay.c
 	"Sys_Delay.h"
 
 1533197703 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
@@ -2307,11 +2307,14 @@
 	"FXOS8700CQ.h"
 	"Lora.h"
 
-1533193414 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\hardware_init.c
+1533699856 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\hardware_init.c
 	"board.h"
 	"pin_mux.h"
+	"board.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
 
-1533197703 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
+1533699856 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\main.c
 	<stdio.h>
 	"FXOS8700CQ.h"
 	"FXAS21002C.h"
@@ -2319,6 +2322,8 @@
 	"I2C_RW_Register.h"
 	"Sys_Delay.h"
 	"debug_console_imx.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
 
 1533193414 f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\accidentalert.c
 	"FXAS21002C.h"
@@ -2507,6 +2512,14 @@
 	"gpio_imx.h"
 
 1533669165 d:\workspace\git\wad\users\khuehm\code\wad_project\src\app\w_a_d\eventhandling.h
+	"FXAS21002C.h"
+	"FXOS8700CQ.h"
+	"Lora.h"
+	"Sys_Delay.h"
+	"gpio_pins.h"
+	"gpio_imx.h"
+
+1533699856 source:f:\intern\mockprojet\wad\users\khuehm\code\wad_project\src\app\w_a_d\eventhandling.c
 	"FXAS21002C.h"
 	"FXOS8700CQ.h"
 	"Lora.h"

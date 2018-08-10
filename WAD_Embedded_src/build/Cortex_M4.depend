@@ -2506,10 +2506,17 @@
 	"gpio_pins.h"
 	"gpio_imx.h"
 
+<<<<<<< HEAD
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\fxas21002c\fxas21002c.c
+	"FXAS21002C.h"
+
+1533699863 f:\intern\mockprojet\wad\wad_embedded_src\src\app\fxas21002c\fxas21002c.h
+=======
 1533133747 source:d:\workspace\git\wad\wad_embedded_src\src\app\fxas21002c\fxas21002c.c
 	"FXAS21002C.h"
 
 1533195549 d:\workspace\git\wad\wad_embedded_src\src\app\fxas21002c\fxas21002c.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
@@ -2519,13 +2526,27 @@
 	<math.h>
 	"I2C_RW_Register.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\inc\board.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\inc\board.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	"pin_mux.h"
 	"rdc.h"
 	"rdc_defs_imx6sx.h"
 	"ccm_imx6sx.h"
 	"clock_freq.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\inc\pin_mux.h
+	"device_imx.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\devices\device_imx.h
+	"MCIMX6X/include/MCIMX6X_M4.h"
+	"MCIMX7D/include/MCIMX7D_M4.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\devices\mcimx6x\include\mcimx6x_m4.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\inc\pin_mux.h
 	"device_imx.h"
 
@@ -2534,48 +2555,87 @@
 	"MCIMX7D/include/MCIMX7D_M4.h"
 
 1532781080 d:\workspace\git\wad\wad_embedded_src\src\platform\devices\mcimx6x\include\mcimx6x_m4.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	"core_cm4.h"
 	"system_MCIMX6X_M4.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\cmsis\include\core_cm4.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\cmsis\include\core_cm4.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<core_cmInstr.h>
 	<core_cmFunc.h>
 	<core_cmSimd.h>
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\cmsis\include\core_cminstr.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\cmsis\include\core_cminstr.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<cmsis_iar.h>
 	<cmsis_ccs.h>
 	<cmsis_csm.h>
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\cmsis\include\core_cmfunc.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\cmsis\include\core_cmfunc.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<cmsis_iar.h>
 	<cmsis_ccs.h>
 	<cmsis_csm.h>
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\cmsis\include\core_cmsimd.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\cmsis\include\core_cmsimd.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<cmsis_iar.h>
 	<cmsis_ccs.h>
 	<cmsis_csm.h>
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.h
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\rdc.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.h
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\rdc.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\rdc_defs_imx6sx.h
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\ccm_imx6sx.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\rdc_defs_imx6sx.h
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\ccm_imx6sx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<stddef.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\inc\clock_freq.h
+	"device_imx.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\utilities\inc\debug_console_imx.h
+	<stdint.h>
+	"device_imx.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\i2c_imx.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\inc\clock_freq.h
 	"device_imx.h"
 
@@ -2584,24 +2644,39 @@
 	"device_imx.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\i2c_imx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699863 f:\intern\mockprojet\wad\wad_embedded_src\src\app\sys_delay\sys_delay.h
+	"board.h"
+
+1533699863 f:\intern\mockprojet\wad\wad_embedded_src\src\app\i2c_rw_register\i2c_rw_register.h
+=======
 1533195596 d:\workspace\git\wad\wad_embedded_src\src\app\sys_delay\sys_delay.h
 	"board.h"
 
 1533195582 d:\workspace\git\wad\wad_embedded_src\src\app\i2c_rw_register\i2c_rw_register.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
 	"i2c_imx.h"
 
+<<<<<<< HEAD
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\fxos8700cq\fxos8700cq.c
+	"FXOS8700CQ.h"
+
+1533699863 f:\intern\mockprojet\wad\wad_embedded_src\src\app\fxos8700cq\fxos8700cq.h
+=======
 1533133747 source:d:\workspace\git\wad\wad_embedded_src\src\app\fxos8700cq\fxos8700cq.c
 	"FXOS8700CQ.h"
 
 1533195593 d:\workspace\git\wad\wad_embedded_src\src\app\fxos8700cq\fxos8700cq.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	"board.h"
@@ -2611,6 +2686,15 @@
 	<math.h>
 	"I2C_RW_Register.h"
 
+<<<<<<< HEAD
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\i2c_rw_register\i2c_rw_register.c
+	"I2C_RW_Register.h"
+
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\lora\lora.c
+	"Lora.h"
+
+1533699863 f:\intern\mockprojet\wad\wad_embedded_src\src\app\lora\lora.h
+=======
 1533134794 source:d:\workspace\git\wad\wad_embedded_src\src\app\i2c_rw_register\i2c_rw_register.c
 	"I2C_RW_Register.h"
 
@@ -2618,22 +2702,34 @@
 	"Lora.h"
 
 1533195570 d:\workspace\git\wad\wad_embedded_src\src\app\lora\lora.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	"uart_imx.h"
 	"board.h"
 	"debug_console_imx.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\uart_imx.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\uart_imx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\sys_delay\sys_delay.c
+	"Sys_Delay.h"
+
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\w_a_d\eventhandling.c
+=======
 1533669203 source:d:\workspace\git\wad\wad_embedded_src\src\app\sys_delay\sys_delay.c
 	"Sys_Delay.h"
 
 1533669165 source:d:\workspace\git\wad\wad_embedded_src\src\app\w_a_d\eventhandling.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	"FXAS21002C.h"
 	"FXOS8700CQ.h"
 	"Lora.h"
@@ -2641,23 +2737,38 @@
 	"gpio_pins.h"
 	"gpio_imx.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\inc\gpio_pins.h
+	"device_imx.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\gpio_imx.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\inc\gpio_pins.h
 	"device_imx.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\gpio_imx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\w_a_d\hardware_init.c
+=======
 1533518970 source:d:\workspace\git\wad\wad_embedded_src\src\app\w_a_d\hardware_init.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	"board.h"
 	"pin_mux.h"
 	"board.h"
 	"gpio_pins.h"
 	"gpio_imx.h"
 
+<<<<<<< HEAD
+1533699863 source:f:\intern\mockprojet\wad\wad_embedded_src\src\app\w_a_d\main.c
+=======
 1533666716 source:d:\workspace\git\wad\wad_embedded_src\src\app\w_a_d\main.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdio.h>
 	"FXOS8700CQ.h"
 	"FXAS21002C.h"
@@ -2668,7 +2779,11 @@
 	"gpio_pins.h"
 	"gpio_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\src\board.c
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\src\board.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdio.h>
 	"board.h"
 	"debug_console_imx.h"
@@ -2677,24 +2792,55 @@
 	"wdog_imx.h"
 	"pin_mux.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\wdog_imx.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\wdog_imx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\src\clock_freq.c
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\src\clock_freq.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	"clock_freq.h"
 	"ccm_imx6sx.h"
 	"ccm_analog_imx6sx.h"
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\ccm_analog_imx6sx.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\ccm_analog_imx6sx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<stddef.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\src\gpio_pins.c
+	<assert.h>
+	"gpio_pins.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\board\udoo_neo\src\pin_mux.c
+	"pin_mux.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.s
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.c
+	<stdbool.h>
+	"MCIMX6X_M4.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\adc_imx6sx.c
+	"adc_imx6sx.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\adc_imx6sx.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\board\udoo_neo\src\gpio_pins.c
 	<assert.h>
 	"gpio_pins.h"
@@ -2712,11 +2858,24 @@
 	"adc_imx6sx.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\adc_imx6sx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\ccm_analog_imx6sx.c
+	"ccm_analog_imx6sx.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\ccm_imx6sx.c
+	"ccm_imx6sx.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\ecspi.c
+	"ecspi.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\ecspi.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\ccm_analog_imx6sx.c
 	"ccm_analog_imx6sx.h"
 
@@ -2727,29 +2886,56 @@
 	"ecspi.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\ecspi.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\epit.c
+	"epit.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\epit.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\epit.c
 	"epit.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\epit.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\flexcan.c
+	"flexcan.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\flexcan.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\flexcan.c
 	"flexcan.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\flexcan.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\gpio_imx.c
+	"gpio_imx.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\i2c_imx.c
+	"i2c_imx.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\lmem.c
+	"lmem.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\lmem.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\gpio_imx.c
 	"gpio_imx.h"
 
@@ -2760,19 +2946,37 @@
 	"lmem.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\lmem.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\mu_imx.c
+	"mu_imx.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\mu_imx.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\mu_imx.c
 	"mu_imx.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\mu_imx.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	<assert.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\rdc.c
+	"rdc.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\rdc_semaphore.c
+	<assert.h>
+	"rdc_semaphore.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\rdc_semaphore.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\rdc.c
 	"rdc.h"
 
@@ -2781,19 +2985,37 @@
 	"rdc_semaphore.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\rdc_semaphore.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\sema4.c
+	<assert.h>
+	"sema4.h"
+
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\inc\sema4.h
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\sema4.c
 	<assert.h>
 	"sema4.h"
 
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\inc\sema4.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdint.h>
 	<stdbool.h>
 	"device_imx.h"
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\uart_imx.c
+	"uart_imx.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\drivers\src\wdog_imx.c
+	"wdog_imx.h"
+
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\utilities\src\debug_console_imx.c
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\drivers\src\uart_imx.c
 	"uart_imx.h"
 
@@ -2801,6 +3023,7 @@
 	"wdog_imx.h"
 
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\utilities\src\debug_console_imx.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdbool.h>
 	<stdarg.h>
 	<stdio.h>
@@ -2811,14 +3034,22 @@
 	"print_scan.h"
 	<yfuns.h>
 
+<<<<<<< HEAD
+1533699864 f:\intern\mockprojet\wad\wad_embedded_src\src\platform\utilities\src\print_scan.h
+=======
 1531923287 d:\workspace\git\wad\wad_embedded_src\src\platform\utilities\src\print_scan.h
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	<stdio.h>
 	<stdarg.h>
 	<stdint.h>
 	<stdbool.h>
 	<string.h>
 
+<<<<<<< HEAD
+1533699864 source:f:\intern\mockprojet\wad\wad_embedded_src\src\platform\utilities\src\print_scan.c
+=======
 1531923287 source:d:\workspace\git\wad\wad_embedded_src\src\platform\utilities\src\print_scan.c
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 	"print_scan.h"
 	<stdio.h>
 	<stdlib.h>

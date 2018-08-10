@@ -193,7 +193,7 @@
 			<code_completion />
 			<debugger>
 				<target_debugging_settings target="Debug" active_interface="J-link">
-					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="C:\Program Files (x86)\SEGGER\JLink_V512d" executable="JLinkGDBServerCL.exe" description="" dont_start_server="false" backoff_time="2000" options="0" reg_filter="0" active_family="Generic" gdb_before_conn="" gdb_after_conn="">
+					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="F:\Intern\Jlink\JLink_V512d" executable="JLinkGDBServerCL.exe" description="" dont_start_server="false" backoff_time="2000" options="0" reg_filter="0" active_family="Generic" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Generic">
 							<option opt_id="ID_CMD_BEFORE" opt_value="" />
 							<option opt_id="ID_GDB_SERVER_CL" opt_value="-device cortex-m4 -if JTAG -speed 4000" />
