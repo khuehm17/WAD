@@ -14,3 +14,4 @@ D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterfa
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Release\MockProjectInterface.csproj.CoreCompileInputs.cache
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Release\MockProjectInterface.exe
 D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Release\MockProjectInterface.pdb
+D:\CongViec\FPT_Internship_2018\MockProject\WAD\Users\VinhHNQ\MockProjectInterface\MockProjectInterface\obj\Release\MockProjectInterface.csprojResolveAssemblyReference.cache

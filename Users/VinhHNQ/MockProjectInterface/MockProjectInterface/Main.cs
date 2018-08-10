@@ -167,15 +167,20 @@ namespace MockProjectInterface
         //Determine the event
         private void ProcessReceiveData(string code, string id)
         {
-            if (code == "AC")
+            switch (code )
             {
-                 this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Accident signal incoming \r\n"; }));
-                accidentEvent(id);
-               
-            }
-            else{
-                this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Safety confirmed signal incoming \r\n"; }));
-                stillOkEvent(id);
+                case "AC":
+                    this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Accident signal incoming \r\n"; }));
+                    accidentEvent(id);
+                    break;
+
+                case "OK":
+                    this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Safety confirmed signal incoming \r\n"; }));
+                    stillOkEvent(id);
+                    break;     
+                default:
+                    this.Invoke(new MethodInvoker(delegate () { txbThongTin.Text += "\r\n Strange signal \r\n"; }));
+                    break;
             }
         }
 
