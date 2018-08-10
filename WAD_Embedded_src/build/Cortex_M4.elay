@@ -17,15 +17,14 @@
 			<Cursor1 position="3105" topLine="49" />
 		</Cursor>
 	</File>
-	<File name="..\src\app\FXOS8700CQ\FXOS8700CQ.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\src\app\FXOS8700CQ\FXOS8700CQ.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1253" topLine="23" />
+			<Cursor1 position="2928" topLine="73" />
 		</Cursor>
 		<Folding>
 			<Collapse line="62" />
 			<Collapse line="71" />
 			<Collapse line="80" />
-			<Collapse line="99" />
 			<Collapse line="131" />
 			<Collapse line="163" />
 			<Collapse line="237" />
@@ -82,7 +81,11 @@
 	</File>
 	<File name="..\src\app\W_A_D\main.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
+			<Cursor1 position="897" topLine="8" />
+=======
 			<Cursor1 position="1057" topLine="32" />
+>>>>>>> 1da6158764982fab59643527a0bdffd82196a13c
 		</Cursor>
 	</File>
 	<File name="..\src\board\udoo_neo\inc\board.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
