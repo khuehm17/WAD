@@ -214,7 +214,11 @@ Discarded input sections
                 0x00000000       0x20 obj\debug\src\board\udoo_neo\src\gpio_pins.o
  .debug_ranges  0x00000000       0x10 obj\debug\src\board\udoo_neo\src\gpio_pins.o
  .debug_line    0x00000000      0x1b3 obj\debug\src\board\udoo_neo\src\gpio_pins.o
+<<<<<<< HEAD
  .debug_str     0x00000000     0x3d3a obj\debug\src\board\udoo_neo\src\gpio_pins.o
+=======
+ .debug_str     0x00000000     0x3d36 obj\debug\src\board\udoo_neo\src\gpio_pins.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\board\udoo_neo\src\gpio_pins.o
  .debug_frame   0x00000000       0x34 obj\debug\src\board\udoo_neo\src\gpio_pins.o
  .ARM.attributes
@@ -305,7 +309,11 @@ Discarded input sections
                 0x00000000       0xc0 obj\debug\src\platform\drivers\src\adc_imx6sx.o
  .debug_ranges  0x00000000       0xb0 obj\debug\src\platform\drivers\src\adc_imx6sx.o
  .debug_line    0x00000000      0x42f obj\debug\src\platform\drivers\src\adc_imx6sx.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x793 obj\debug\src\platform\drivers\src\adc_imx6sx.o
+=======
+ .debug_str     0x00000000      0x78f obj\debug\src\platform\drivers\src\adc_imx6sx.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\adc_imx6sx.o
  .debug_frame   0x00000000      0x324 obj\debug\src\platform\drivers\src\adc_imx6sx.o
  .ARM.attributes
@@ -339,7 +347,11 @@ Discarded input sections
                 0x00000000       0x28 obj\debug\src\platform\drivers\src\ccm_imx6sx.o
  .debug_ranges  0x00000000       0x18 obj\debug\src\platform\drivers\src\ccm_imx6sx.o
  .debug_line    0x00000000      0x198 obj\debug\src\platform\drivers\src\ccm_imx6sx.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x30c obj\debug\src\platform\drivers\src\ccm_imx6sx.o
+=======
+ .debug_str     0x00000000      0x308 obj\debug\src\platform\drivers\src\ccm_imx6sx.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\ccm_imx6sx.o
  .debug_frame   0x00000000       0x60 obj\debug\src\platform\drivers\src\ccm_imx6sx.o
  .ARM.attributes
@@ -367,7 +379,11 @@ Discarded input sections
                 0x00000000       0x50 obj\debug\src\platform\drivers\src\ecspi.o
  .debug_ranges  0x00000000       0x40 obj\debug\src\platform\drivers\src\ecspi.o
  .debug_line    0x00000000      0x288 obj\debug\src\platform\drivers\src\ecspi.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x452 obj\debug\src\platform\drivers\src\ecspi.o
+=======
+ .debug_str     0x00000000      0x44e obj\debug\src\platform\drivers\src\ecspi.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\ecspi.o
  .debug_frame   0x00000000      0x124 obj\debug\src\platform\drivers\src\ecspi.o
  .ARM.attributes
@@ -392,7 +408,11 @@ Discarded input sections
                 0x00000000       0x38 obj\debug\src\platform\drivers\src\epit.o
  .debug_ranges  0x00000000       0x28 obj\debug\src\platform\drivers\src\epit.o
  .debug_line    0x00000000      0x23c obj\debug\src\platform\drivers\src\epit.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x291 obj\debug\src\platform\drivers\src\epit.o
+=======
+ .debug_str     0x00000000      0x28d obj\debug\src\platform\drivers\src\epit.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\epit.o
  .debug_frame   0x00000000       0xac obj\debug\src\platform\drivers\src\epit.o
  .ARM.attributes
@@ -515,7 +535,11 @@ Discarded input sections
                 0x00000000      0x160 obj\debug\src\platform\drivers\src\flexcan.o
  .debug_ranges  0x00000000      0x150 obj\debug\src\platform\drivers\src\flexcan.o
  .debug_line    0x00000000      0x6b9 obj\debug\src\platform\drivers\src\flexcan.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0xa6c obj\debug\src\platform\drivers\src\flexcan.o
+=======
+ .debug_str     0x00000000      0xa68 obj\debug\src\platform\drivers\src\flexcan.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\flexcan.o
  .debug_frame   0x00000000      0x608 obj\debug\src\platform\drivers\src\flexcan.o
  .ARM.attributes
@@ -582,7 +606,11 @@ Discarded input sections
                 0x00000000       0x98 obj\debug\src\platform\drivers\src\lmem.o
  .debug_ranges  0x00000000       0x88 obj\debug\src\platform\drivers\src\lmem.o
  .debug_line    0x00000000      0x3c7 obj\debug\src\platform\drivers\src\lmem.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x3ec obj\debug\src\platform\drivers\src\lmem.o
+=======
+ .debug_str     0x00000000      0x3e8 obj\debug\src\platform\drivers\src\lmem.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\lmem.o
  .debug_frame   0x00000000      0x270 obj\debug\src\platform\drivers\src\lmem.o
  .ARM.attributes
@@ -627,7 +655,11 @@ Discarded input sections
                 0x00000000       0x70 obj\debug\src\platform\drivers\src\mu_imx.o
  .debug_ranges  0x00000000       0x60 obj\debug\src\platform\drivers\src\mu_imx.o
  .debug_line    0x00000000      0x2b0 obj\debug\src\platform\drivers\src\mu_imx.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x368 obj\debug\src\platform\drivers\src\mu_imx.o
+=======
+ .debug_str     0x00000000      0x364 obj\debug\src\platform\drivers\src\mu_imx.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\mu_imx.o
  .debug_frame   0x00000000      0x1ac obj\debug\src\platform\drivers\src\mu_imx.o
  .ARM.attributes
@@ -647,7 +679,11 @@ Discarded input sections
                 0x00000000       0x30 obj\debug\src\platform\drivers\src\rdc.o
  .debug_ranges  0x00000000       0x20 obj\debug\src\platform\drivers\src\rdc.o
  .debug_line    0x00000000      0x1cc obj\debug\src\platform\drivers\src\rdc.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x2b5 obj\debug\src\platform\drivers\src\rdc.o
+=======
+ .debug_str     0x00000000      0x2b1 obj\debug\src\platform\drivers\src\rdc.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\rdc.o
  .debug_frame   0x00000000       0x88 obj\debug\src\platform\drivers\src\rdc.o
  .ARM.attributes
@@ -682,7 +718,11 @@ Discarded input sections
                 0x00000000       0x58 obj\debug\src\platform\drivers\src\rdc_semaphore.o
  .debug_ranges  0x00000000       0x48 obj\debug\src\platform\drivers\src\rdc_semaphore.o
  .debug_line    0x00000000      0x26d obj\debug\src\platform\drivers\src\rdc_semaphore.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x35b obj\debug\src\platform\drivers\src\rdc_semaphore.o
+=======
+ .debug_str     0x00000000      0x357 obj\debug\src\platform\drivers\src\rdc_semaphore.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\rdc_semaphore.o
  .debug_frame   0x00000000      0x134 obj\debug\src\platform\drivers\src\rdc_semaphore.o
  .ARM.attributes
@@ -731,7 +771,11 @@ Discarded input sections
                 0x00000000       0x60 obj\debug\src\platform\drivers\src\sema4.o
  .debug_ranges  0x00000000       0x50 obj\debug\src\platform\drivers\src\sema4.o
  .debug_line    0x00000000      0x2ac obj\debug\src\platform\drivers\src\sema4.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x3c8 obj\debug\src\platform\drivers\src\sema4.o
+=======
+ .debug_str     0x00000000      0x3c4 obj\debug\src\platform\drivers\src\sema4.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\sema4.o
  .debug_frame   0x00000000      0x158 obj\debug\src\platform\drivers\src\sema4.o
  .ARM.attributes
@@ -806,7 +850,11 @@ Discarded input sections
                 0x00000000       0x30 obj\debug\src\platform\drivers\src\wdog_imx.o
  .debug_ranges  0x00000000       0x20 obj\debug\src\platform\drivers\src\wdog_imx.o
  .debug_line    0x00000000      0x1a9 obj\debug\src\platform\drivers\src\wdog_imx.o
+<<<<<<< HEAD
  .debug_str     0x00000000      0x224 obj\debug\src\platform\drivers\src\wdog_imx.o
+=======
+ .debug_str     0x00000000      0x220 obj\debug\src\platform\drivers\src\wdog_imx.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .comment       0x00000000       0x6f obj\debug\src\platform\drivers\src\wdog_imx.o
  .debug_frame   0x00000000       0x88 obj\debug\src\platform\drivers\src\wdog_imx.o
  .ARM.attributes
@@ -1942,7 +1990,11 @@ LOAD c:/program files (x86)/embitz/1.11/share/em_armgcc/bin/../lib/gcc/arm-none-
 END GROUP
 OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
 
+<<<<<<< HEAD
 .debug_info     0x00000000     0x99c1
+=======
+.debug_info     0x00000000     0x99bd
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
  .debug_info    0x00000000      0x3ce obj\debug\src\app\fxas21002c\fxas21002c.o
  .debug_info    0x000003ce      0x4bc obj\debug\src\app\fxos8700cq\fxos8700cq.o
  .debug_info    0x0000088a      0x5a6 obj\debug\src\app\i2c_rw_register\i2c_rw_register.o
@@ -1954,6 +2006,7 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
  .debug_info    0x000023ac     0x11b6 obj\debug\src\board\udoo_neo\src\board.o
  .debug_info    0x00003562      0xf98 obj\debug\src\board\udoo_neo\src\clock_freq.o
  .debug_info    0x000044fa     0x2442 obj\debug\src\board\udoo_neo\src\pin_mux.o
+<<<<<<< HEAD
  .debug_info    0x0000693c       0x99 obj\debug\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.o
  .debug_info    0x000069d5      0x944 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
  .debug_info    0x00007319      0x698 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
@@ -1962,6 +2015,16 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
  .debug_info    0x00008113      0x9f7 obj\debug\src\platform\drivers\src\uart_imx.o
  .debug_info    0x00008b0a      0x8d0 obj\debug\src\platform\utilities\src\debug_console_imx.o
  .debug_info    0x000093da      0x5e7 obj\debug\src\platform\utilities\src\print_scan.o
+=======
+ .debug_info    0x0000693c       0x95 obj\debug\src\platform\devices\mcimx6x\startup\gcc\startup_mcimx6x_m4.o
+ .debug_info    0x000069d1      0x944 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
+ .debug_info    0x00007315      0x698 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
+ .debug_info    0x000079ad      0x3a1 obj\debug\src\platform\drivers\src\gpio_imx.o
+ .debug_info    0x00007d4e      0x3c1 obj\debug\src\platform\drivers\src\i2c_imx.o
+ .debug_info    0x0000810f      0x9f7 obj\debug\src\platform\drivers\src\uart_imx.o
+ .debug_info    0x00008b06      0x8d0 obj\debug\src\platform\utilities\src\debug_console_imx.o
+ .debug_info    0x000093d6      0x5e7 obj\debug\src\platform\utilities\src\print_scan.o
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 
 .debug_abbrev   0x00000000     0x1b64
  .debug_abbrev  0x00000000      0x160 obj\debug\src\app\fxas21002c\fxas21002c.o
@@ -2065,6 +2128,7 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
  .debug_line    0x000028e1      0x3f0 obj\debug\src\platform\utilities\src\debug_console_imx.o
  .debug_line    0x00002cd1      0x529 obj\debug\src\platform\utilities\src\print_scan.o
 
+<<<<<<< HEAD
 .debug_str      0x00000000     0x7cbc
  .debug_str     0x00000000      0x335 obj\debug\src\app\fxas21002c\fxas21002c.o
                                 0x3b4 (size before relaxing)
@@ -2102,6 +2166,45 @@ OUTPUT(bin\Debug\Cortex_M4.elf elf32-littlearm)
                                 0x90b (size before relaxing)
  .debug_str     0x00007b36      0x186 obj\debug\src\platform\utilities\src\print_scan.o
                                 0x380 (size before relaxing)
+=======
+.debug_str      0x00000000     0x7cb8
+ .debug_str     0x00000000      0x331 obj\debug\src\app\fxas21002c\fxas21002c.o
+                                0x3b0 (size before relaxing)
+ .debug_str     0x00000331      0x1e5 obj\debug\src\app\fxos8700cq\fxos8700cq.o
+                                0x4a6 (size before relaxing)
+ .debug_str     0x00000516      0x2b7 obj\debug\src\app\i2c_rw_register\i2c_rw_register.o
+                                0x4ed (size before relaxing)
+ .debug_str     0x000007cd      0x52c obj\debug\src\app\lora\lora.o
+                                0x73c (size before relaxing)
+ .debug_str     0x00000cf9      0x8a5 obj\debug\src\app\sys_delay\sys_delay.o
+                                0xa61 (size before relaxing)
+ .debug_str     0x0000159e       0xa3 obj\debug\src\app\w_a_d\eventhandling.o
+                                0x2a2 (size before relaxing)
+ .debug_str     0x00001641      0x18e obj\debug\src\app\w_a_d\hardware_init.o
+                                0x364 (size before relaxing)
+ .debug_str     0x000017cf       0x1d obj\debug\src\app\w_a_d\main.o
+                                0x22b (size before relaxing)
+ .debug_str     0x000017ec     0x17f0 obj\debug\src\board\udoo_neo\src\board.o
+                               0x1a69 (size before relaxing)
+ .debug_str     0x00002fdc      0x710 obj\debug\src\board\udoo_neo\src\clock_freq.o
+                               0x1146 (size before relaxing)
+ .debug_str     0x000036ec     0x3bcb obj\debug\src\board\udoo_neo\src\pin_mux.o
+                               0x3ebd (size before relaxing)
+ .debug_str     0x000072b7       0xe6 obj\debug\src\platform\devices\mcimx6x\startup\system_mcimx6x_m4.o
+                                0x66e (size before relaxing)
+ .debug_str     0x0000739d      0x114 obj\debug\src\platform\drivers\src\ccm_analog_imx6sx.o
+                                0x649 (size before relaxing)
+ .debug_str     0x000074b1       0x8e obj\debug\src\platform\drivers\src\gpio_imx.o
+                                0x39c (size before relaxing)
+ .debug_str     0x0000753f       0x9c obj\debug\src\platform\drivers\src\i2c_imx.o
+                                0x315 (size before relaxing)
+ .debug_str     0x000075db      0x2ff obj\debug\src\platform\drivers\src\uart_imx.o
+                                0x62c (size before relaxing)
+ .debug_str     0x000078da      0x258 obj\debug\src\platform\utilities\src\debug_console_imx.o
+                                0x907 (size before relaxing)
+ .debug_str     0x00007b32      0x186 obj\debug\src\platform\utilities\src\print_scan.o
+                                0x37c (size before relaxing)
+>>>>>>> febcd2bcb99c9892c1a8e07f11eacd8575040b42
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e obj\debug\src\app\fxas21002c\fxas21002c.o

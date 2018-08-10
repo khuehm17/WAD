@@ -17,7 +17,7 @@
 /* FUNCTION */
 void I2C_WriteRegister(unsigned char SlaveAddress, uint8_t RegisterAddress, char Data);
 unsigned char I2C_ReadRegister(unsigned char SlaveAddress, uint8_t RegisterAddress);
-void I2C_ReadMultiRegister(unsigned char SlaveAddress, uint8_t RegisterAddress, uint32_t DataLength, uint8_t Data);
+//void I2C_ReadMultiRegister(unsigned char SlaveAddress, uint8_t RegisterAddress, uint32_t DataLength, uint8_t Data);
 bool I2C_MasterSendDataPolling(I2C_Type *base,
                                       const uint8_t *cmdBuff,
                                       uint32_t cmdSize,

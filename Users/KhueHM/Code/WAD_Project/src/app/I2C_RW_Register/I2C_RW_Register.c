@@ -46,6 +46,7 @@ unsigned char I2C_ReadRegister(unsigned char SlaveAddress, uint8_t RegisterAddre
  * Read Bytes from Multi Register Function
  * !! Notice: Have some bugs with this Function
  */
+ /*
 void I2C_ReadMultiRegisters(unsigned char SlaveAddress, uint8_t RegisterAddress, uint32_t DataLength, uint8_t Data)
 {
     cmdBuffer[0] = SlaveAddress << 1;
@@ -53,7 +54,7 @@ void I2C_ReadMultiRegisters(unsigned char SlaveAddress, uint8_t RegisterAddress,
     cmdBuffer[2] = (SlaveAddress << 1) + 1;
     I2C_MasterReceiveDataPolling(I2C4_BASE_PTR, cmdBuffer, 3, Data, DataLength);
 }
-
+*/
 /*
  * Send Data through I2C Function
  */

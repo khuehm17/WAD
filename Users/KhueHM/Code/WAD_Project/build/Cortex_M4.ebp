@@ -76,9 +76,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\src\app\Sys_Delay\Sys_Delay.h" />
-		<Unit filename="..\src\app\W_A_D\EventHandling.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="..\src\app\W_A_D\EventHandling.h" />
 		<Unit filename="..\src\app\W_A_D\hardware_init.c">
 			<Option compilerVar="CC" />
 		</Unit>
