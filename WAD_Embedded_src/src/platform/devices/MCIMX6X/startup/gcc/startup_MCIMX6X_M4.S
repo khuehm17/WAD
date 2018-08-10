@@ -183,7 +183,7 @@ __isr_vector:
     .long   ENET1_Handler                              /* ENET1 Interrupt Request*/
     .long   ENET1_Timer_Handler                        /* ENET1 1588 Timer interrupt [synchronous] request*/
     .long   PCIe1_Handler                              /* PCIe interrupt request 1*/
-    .long   PCIe2_Handler                              /* PCIe interrupt request 2*/
+    .long   PCIe2_Handler                              /*   PCIe interrupt request 2*/
     .long   PCIe3_Handler                              /* PCIe interrupt request 3*/
     .long   PCIe4_Handler                              /* PCIe interrupt request 4*/
     .long   DCIC1_Handler                              /* DCIC1 interrupt request*/
