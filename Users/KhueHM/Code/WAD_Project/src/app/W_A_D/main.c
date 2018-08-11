@@ -41,7 +41,6 @@ int main (void)
     GPIO_WritePinOutput(GPIO6_BASE_PTR, 14, gpioPinSet);
 
     Systick_Delay_Init();
-    debug_printf("Hello!");
     //FXOS8700CQ_Accel_Calib();
 
     /* Start...! */
