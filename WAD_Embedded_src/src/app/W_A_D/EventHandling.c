@@ -39,7 +39,7 @@ void EventHandling()
     gyro_Values = FXAS21002C_GetGyro();
     accel_Values = FXOS8700CQ_GetAccel();
 
-    if ( (gyro_Values.g_X >= 2500) || (gyro_Values.g_Y >= 2500) || (accel_Values.a_X >= 2500) || (accel_Values.a_Y >= 2500))
+    if ( (gyro_Values.g_X >= 4000) || (gyro_Values.g_Y >= 4000) || (accel_Values.a_X >= 4000) || (accel_Values.a_Y >= 4000))
     {
         Lora_Send(wheelchairID);
 
