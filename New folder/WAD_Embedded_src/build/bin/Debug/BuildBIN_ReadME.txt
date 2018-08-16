@@ -1,0 +1,1 @@
+Run BuildBIN.bat to generate Cortex_M4.bin file
